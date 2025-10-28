@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa Listings - Nori.com</title>
+  <link rel="stylesheet" href="../css/pg-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="../javascript/pg-page.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="javascript:history.back()" class="back-button">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <div class="logo">
+      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo"/>
+      <a href="#" id="logo-name">NORI.com</a>
+    </div>
+    <div id="search-div">
+      <input type="search" id="search" placeholder="Search Villas, Locations..." />
+      <i class="fa fa-search"></i>
+    </div>
+    <div id="home"><a href="./Home_Page.html">Home</a></div>
+    <div id="profile">
+      <i class="fa fa-user-circle" id="icon"></i>
+      <a href="#" class="header-right-content">Profile</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <aside id="left-adds-aside">
+      <h1>Filter by</h1>
+
+      <!-- Villa Types -->
+      <div class="filter-option"><input type="checkbox" id="v1"><label for="v1">Luxury Villas</label></div>
+      <div class="filter-option"><input type="checkbox" id="v2"><label for="v2">Beach Villas</label></div>
+      <div class="filter-option"><input type="checkbox" id="v3"><label for="v3">Mountain Villas</label></div>
+      <div class="filter-option"><input type="checkbox" id="v4"><label for="v4">Pool Villas</label></div>
+      <div class="filter-option"><input type="checkbox" id="v5"><label for="v5">Private Villas</label></div>
+
+      <!-- Price Range -->
+      <h1>Price Range</h1>
+      <h2>Min range: ₹<span id="min-value">5000</span></h2>
+      <input type="range" id="min-range" min="5000" max="50000" step="1000" value="5000">
+
+      <h2>Max range: ₹<span id="max-value">50000</span></h2>
+      <input type="range" id="max-range" min="5000" max="50000" step="1000" value="50000">
+
+      <!-- Capacity -->
+      <h2>Guest Capacity</h2>
+      <div class="filter-option"><input type="checkbox" id="cap2"><label for="cap2">2 Guests</label></div>
+      <div class="filter-option"><input type="checkbox" id="cap4"><label for="cap4">4 Guests</label></div>
+      <div class="filter-option"><input type="checkbox" id="cap6"><label for="cap6">6 Guests</label></div>
+      <div class="filter-option"><input type="checkbox" id="cap8"><label for="cap8">8+ Guests</label></div>
+
+      <!-- Villa Amenities -->
+      <h2>Villa Amenities</h2>
+      <div class="filter-option"><input type="checkbox" id="amen1"><label for="amen1">Private Pool</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen2"><label for="amen2">Garden</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen3"><label for="amen3">Kitchen</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen4"><label for="amen4">Parking</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen5"><label for="amen5">WiFi</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen6"><label for="amen6">AC</label></div>
+      <div class="filter-option"><input type="checkbox" id="amen7"><label for="amen7">Security</label></div>
+
+      <!-- Star Rating -->
+      <h2>Star Rating</h2>
+      <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5 Stars</label></div>
+      <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4 Stars</label></div>
+      <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3 Stars</label></div>
+
+      <!-- Availability -->
+      <h2>Availability</h2>
+      <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available villas</label></div>
+
+      <!-- Payment Type -->
+      <h2>Payment Type</h2>
+      <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
+    </aside>
+
+    <section>
+      <!-- Villa 1 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Luxury Beach Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Luxury Beach Villa</h1>
+          <p class="pg-desc">Sleeps 6 — 3 Bedrooms, 3 Bathrooms</p>
+          <p class="pg-location">📍 Goa, Calangute Beach</p>
+          <p class="pg-breakfast">🏊 Private Pool • 🍽️ Kitchen Included</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹15000 advance</p>
+            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.8</span>
+            <span class="rating-text">Excellent</span>
+          </div>
+          <div id="price">
+            <ins><del>₹45000</del></ins>
+            <span class="price-current">₹32000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 2 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Mountain View Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Mountain View Villa</h1>
+          <p class="pg-desc">Sleeps 4 — 2 Bedrooms, 2 Bathrooms</p>
+          <p class="pg-location">📍 Manali, Himachal Pradesh</p>
+          <p class="pg-breakfast">🏔️ Mountain View • 🔥 Fireplace</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹8000 advance</p>
+            <p class="pg-pay-later">💳 Pay at property</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.6</span>
+            <span class="rating-text">Very Good</span>
+          </div>
+          <div id="price">
+            <ins><del>₹28000</del></ins>
+            <span class="price-current">₹22000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 3 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="Private Pool Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Private Pool Villa</h1>
+          <p class="pg-desc">Sleeps 8 — 4 Bedrooms, 4 Bathrooms</p>
+          <p class="pg-location">📍 Udaipur, Lake Pichola</p>
+          <p class="pg-breakfast">🏊 Infinity Pool • 🍳 Chef Service</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹20000 advance</p>
+            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.9</span>
+            <span class="rating-text">Top Rated</span>
+          </div>
+          <div id="price">
+            <ins><del>₹65000</del></ins>
+            <span class="price-current">₹48000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 4 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Garden Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Garden Villa</h1>
+          <p class="pg-desc">Sleeps 6 — 3 Bedrooms, 3 Bathrooms</p>
+          <p class="pg-location">📍 Coorg, Karnataka</p>
+          <p class="pg-breakfast">🌺 Private Garden • ☕ Coffee Estate</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹12000 advance</p>
+            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
+          </div>
+          <div id="price">
+            <ins><del>₹38000</del></ins>
+            <span class="price-current">₹28000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 5 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="Luxury Penthouse Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Luxury Penthouse Villa</h1>
+          <p class="pg-desc">Sleeps 4 — 2 Bedrooms, 2 Bathrooms</p>
+          <p class="pg-location">📍 Mumbai, Bandra West</p>
+          <p class="pg-breakfast">🌆 City View • 🏊 Rooftop Pool</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹25000 advance</p>
+            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.8</span>
+            <span class="rating-text">Top Rated</span>
+          </div>
+          <div id="price">
+            <ins><del>₹75000</del></ins>
+            <span class="price-current">₹55000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 6 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Beachfront Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Beachfront Villa</h1>
+          <p class="pg-desc">Sleeps 8 — 4 Bedrooms, 4 Bathrooms</p>
+          <p class="pg-location">📍 Kerala, Kovalam Beach</p>
+          <p class="pg-breakfast">🏖️ Beach Access • 🚣 Water Sports</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹18000 advance</p>
+            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.9</span>
+            <span class="rating-text">Excellent</span>
+          </div>
+          <div id="price">
+            <ins><del>₹52000</del></ins>
+            <span class="price-current">₹42000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 7 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80" alt="Heritage Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Heritage Villa</h1>
+          <p class="pg-desc">Sleeps 6 — 3 Bedrooms, 3 Bathrooms</p>
+          <p class="pg-location">📍 Jaipur, Old City</p>
+          <p class="pg-breakfast">🏛️ Heritage Property • 🎭 Cultural Shows</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹15000 advance</p>
+            <p class="pg-pay-later">💳 Pay at property</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Very Good</span>
+          </div>
+          <div id="price">
+            <ins><del>₹42000</del></ins>
+            <span class="price-current">₹35000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Villa 8 -->
+      <div class="img-container-div">
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="Spa Villa" class="pg-img" />
+        <div class="pg-details">
+          <h1 class="pg-title">Spa Villa</h1>
+          <p class="pg-desc">Sleeps 4 — 2 Bedrooms, 2 Bathrooms</p>
+          <p class="pg-location">📍 Rishikesh, Uttarakhand</p>
+          <p class="pg-breakfast">🧘 Private Spa • 🧘‍♀️ Yoga Classes</p>
+          <div class="pg-extra-info">
+            <p class="pg-advance">₹10000 advance</p>
+            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+          </div>
+          <div class="pg-rating">
+            <span id="rating">4.8</span>
+            <span class="rating-text">Top Rated</span>
+          </div>
+          <div id="price">
+            <ins><del>₹35000</del></ins>
+            <span class="price-current">₹28000</span>
+            <span class="price-per-night">/night</span>
+          </div>
+          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <h3>POPULAR VILLA DESTINATIONS</h3>
+      <ul>
+        <li>Villas in Goa</li>
+        <li>Villas in Manali</li>
+        <li>Villas in Udaipur</li>
+        <li>Villas in Coorg</li>
+        <li>Villas in Mumbai</li>
+        <li>Villas in Kerala</li>
+        <li>Villas in Jaipur</li>
+        <li>Villas in Rishikesh</li>
+        <li>Villas in Shimla</li>
+        <li>Villas in Ooty</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Villa Experiences</h3>
+      <ul>
+        <li>Luxury Villas</li>
+        <li>Beach Villas</li>
+        <li>Mountain Villas</li>
+        <li>Pool Villas</li>
+        <li>Private Villas</li>
+        <li>Heritage Villas</li>
+        <li>Spa Villas</li>
+        <li>Garden Villas</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Support & FAQs</h3>
+      <ul>
+        <li>Your bookings</li>
+        <li>FAQs</li>
+        <li>Contact us</li>
+        <li>Review a villa</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>For Villa Owners</h3>
+      <ul>
+        <li>Partner with us</li>
+        <li>List your villa</li>
+        <li>Villa Solutions</li>
+        <li>Promote your villa</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Policies</h3>
+      <ul>
+        <li>Terms & Conditions</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+        <li>Community guidelines</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Other Information</h3>
+      <ul>
+        <li>About us</li>
+        <li>Careers</li>
+        <li>Villa Guides</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

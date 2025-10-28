@@ -1,0 +1,10 @@
+.inputs:focus+label
+{
+top: -10px;
+}
+
+#flabel{
+    position: relative;
+    right: 60%;
+
+}

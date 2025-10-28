@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/Home_page.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src = "../javascript/homepage.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
+            <a href="#" id = "logo-name">NORI.com</a>
+        </div>
+        <a href="#" class="header-right-content">Property</a>
+        <a href="#" class="header-right-content" id="support">Support</a>
+        <a href="#" class="header-right-content">Trips</a>
+
+        <div id="profile">
+            <div id = div-icon>
+                <i class='fa fa-user-circle' id="icon"></i>
+            </div>
+            <a href="Login_Page.html" name="profile" class="header-right-content">Login</a>
+            <a href="signup_page.html" class="header-right-content">Sign Up</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <nav class="sidebar" id="sidebar">
+        <a href="Home_Page.html">Home</a>
+        <a href="pg-page.html">PG</a>
+        <a href="resort-page.html">Resort</a>
+        <a href="lodge-page.html">Lodge</a>
+        <a href="camp-house-page.html">Camp House</a>
+        <a href="pent-house-page.html">Pent House</a>
+        <a href="private-capsule.html">Private Capsule</a>
+        <a href="villa-page.html">Villa</a>
+        <a href="Login_Page.html">Login</a>
+        <a href="signup_page.html">Sign Up</a>
+    </nav>
+    <section>
+        <img src="https://i.pinimg.com/1200x/dc/4f/35/dc4f350c640eb5287b6b4eef7588db95.jpg" id = "main_image"alt="">
+        <div class = "inputs">
+            <div id = "loctation-box" class = "input-boxes">
+                <input type="text" id = "location" class = "">
+                <label for="location" class = "location_label">Where to?</label>
+            </div>
+            <div id = "check-in-box" class = "input-boxes">
+                <input type="date" id = "check-in" >
+                <label for="from_date">check-in</label>
+            </div>
+            <div id = "check-out-box" class = "input-boxes">
+                <input type="date" id = "check-out">
+                <label for="check-out">check-out</label>
+            </div>
+            <div id="room-details-box">
+                <div id="rooms_datalist" class="input-boxes">
+                    <input type="text" id="room">
+                    <label for="room">Rooms & Guests</label>
+                    <div id="room-options" class="room-options" style="display: none;">
+                        <div class="room-option">
+                            <span>Room 1</span>
+                            <div class="guest-count">
+                                <div id="adults">
+                                    <label id="adult-label">Adults:</label>
+                                    <div id="adult-button">
+                                        <button class="decrease-adults count-button">-</button>
+                                        <span class="adult-count">0</span>
+                                        <button class="increase-adults count-button">+</button>
+                                    </div>
+                                </div>
+                                <div id="childrens">
+                                    <label id="children-label">Children:</label>
+                                    <div id="child-buttons">
+                                        <button class="decrease-children count-button">-</button>
+                                        <span class="children-count">0</span>
+                                        <button class="increase-children count-button">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="add-room">Add Room</button>
+                        <button id="done-button" class="done-button">Done</button> <!-- Add Done button with class -->
+                        <button id = "remove-room" class  = "remove-room">Remove room</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-button ">
+                <button type="submit" id = "search-button">Search</button>
+            </div>
+        </div>
+        <div id = "fav-img-h1-img-h3">
+            <h1>choose your room type</h1>
+            <div id = "fav-img"> 
+                <div class = "card">
+                   <a href="./pg-page.html">
+                        <img src="https://i.pinimg.com/736x/2e/76/b7/2e76b7b352e21747439a3a0d6bec272c.jpg" alt="">
+                        <h3 class = "fav-img-names">pg</h3>
+                   </a>
+                </div>
+                <div class = "card">
+                    <a href="./resort-page.html">
+                        <img src="https://i.pinimg.com/736x/8b/4d/d8/8b4dd823002626c7b4b4eea2811f86e9.jpg" alt="">
+                        <h3 class = "fav-img-names">resort</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./lodge-page.html">
+                        <img src="https://i.pinimg.com/736x/2c/a1/c8/2ca1c8c6b2a169bde0c44feae2a27bd1.jpg" alt="">
+                        <h3 class = "fav-img-names">lodge</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./camp-house-page.html">
+                        <img src="https://i.pinimg.com/736x/ea/0a/78/ea0a78483d5c6f2582f0c016a9ee0e0b.jpg" alt="">
+                        <h3 class = "fav-img-names">camp house</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./pent-house-page.html">
+                        <img src="https://i.pinimg.com/736x/89/24/dc/8924dc179ab70013f049fd07ca4ddd7f.jpg" alt="">
+                        <h3 class = "fav-img-names">pent house</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./private-capsule.html">
+                        <img src="https://i.pinimg.com/736x/47/41/04/474104085055fc735c9a48ba9217247a.jpg" alt="">
+                        <h3 class = "fav-img-names">private capsule</h3>
+                    </a>
+                </div>
+                <div class = "card">
+                    <a href="./villa-page.html">
+                        <img src="https://i.pinimg.com/736x/95/8f/1d/958f1da47a87363d203b048bee3b48f4.jpg" alt="">
+                        <h3 class = "fav-img-names">villa</h3>
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+        <div id="top-items-h1-images">
+            <h1>Top deals for a last minute getaway</h1>
+            <div id = "top-items-img">  
+                <div class = "top-items-card">
+                    <img src=" https://i.pinimg.com/1200x/92/f6/ee/92f6eea03154a54506e1df76c52094ca.jpg" alt="">
+                    <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="10" class="rating" readonly>
+                            <span>Exceptional (2 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹7,499</span>
+                        <span><del>₹8,472</del></span><br>
+                        <span class = "total-price">₹17,992 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="10%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/736x/c0/c8/69/c0c8692573d910230b532edf22437634.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="8.0" class="rating" readonly>
+                            <span>Good (4 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹7,499</span>
+                        <span><del>₹13,900</del></span><br>
+                        <span class = "total-price">₹9,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="30%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/736x/70/ad/ed/70adedf7ed908f200f28d31cf8cbe9df.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="2.0" class="rating" readonly>
+                            <span>Good (2 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹10,499</span>
+                        <span><del>₹11,900</del></span><br>
+                        <span class = "total-price">₹23,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="20%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/1200x/bb/96/b0/bb96b04838a2bafef36d4f1e8757e53c.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="10" class="rating" readonly>
+                            <span>Exceptional (8 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹7,499</span>
+                        <span><del>₹8,900</del></span><br>
+                        <span class = "total-price">₹17,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="25%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/1200x/19/78/f2/1978f242cc5c77bb9e4fc492fb46f662.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="9.0" class="rating" readonly>
+                            <span>Wonderful (7 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹14,499</span>
+                        <span><del>₹23,900</del></span><br>
+                        <span class = "total-price">₹33,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="18%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/736x/90/3e/9b/903e9b5b4afdecf6ff43859afcecffd3.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="9.0" class="rating" readonly>
+                            <span>Wonderful (2 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹8,499</span>
+                        <span><del>₹9,900</del></span><br>
+                        <span class = "total-price">₹21,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="15%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>
+                <div class = "top-items-card">
+                    <img src="https://i.pinimg.com/1200x/17/41/39/1741398487c99b138be855a3d4ef86dd.jpg" alt="">
+                     <div class="top-items-card-information">
+                        <div class="raing">
+                            <input type="text" value="10" class="rating" readonly>
+                            <span>Exceptional (10 reviews)</span>
+                        </div>
+                        <h4 class = "name">Country Side resort Jaisalmar</h4>    
+                        
+                        <span class = "price">₹11,499</span>
+                        <span><del>₹15,900</del></span><br>
+                        <span class = "total-price">₹28,319 total</span><br>
+                        <span class = "total-price">includes taxes & fees</span><br>
+                        <input type="text" value="50%off" class = "offer" readonly>
+                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div id="explore-card-h1-container-img">
+            <h1>Explore stays in popular destinations</h1>
+                <div id = "explore-card-container">
+                    <div class="expore-card">
+                        <img src="https://i.pinimg.com/736x/7c/31/c1/7c31c15c4a1fbb0ae70deef86ab03514.jpg" class="explore-card-img">
+                        <div class="information">
+                            <h2>Vizag</h2>
+                            <h3>Andhra Pradesh</h3>
+                        </div>
+                    </div>
+                    <div class="expore-card">
+                        <img src="https://i.pinimg.com/736x/22/cb/8a/22cb8a69e3541f1e8b4206f33e3fde97.jpg" class="explore-card-img">
+                        <div class="information">
+                            <h2>Jaipur</h2>
+                            <h3>Rajasthan</h3>
+                        </div>
+                    </div>
+                    <div class="expore-card">
+                            <img src="https://i.pinimg.com/1200x/11/17/0b/11170b186c0eaa633d1d4379f0063b8b.jpg" class="explore-card-img">
+                            <div class="information">
+                                <h2>Bangore</h2>
+                                <h3>Karnataka</h3>
+                            </div>
+                    </div>
+                    <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/45/58/cb/4558cb4369bc059e6733be5da6441356.jpg" class="explore-card-img">
+                            <div class="information">
+                                <h2>Tirupati</h2>
+                                <h3>Andhra Pradesh</h3>
+                            </div>
+                    </div>
+                    <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/46/92/44/469244888ffe9d72c9aad236624abcce.jpg" class="explore-card-img">
+                            <div class="information">
+                                <h2>Sree Padmanabhaswamy</h2>
+                                <h3>Kerala</h3>
+                            </div>
+                    </div>
+                    <div class="expore-card">
+                            <img src="https://i.pinimg.com/1200x/04/a2/58/04a2587edefba986b7beb02c3016d7b2.jpg" class="explore-card-img">
+                            <div class="information">
+                                <h2>Baga</h2>
+                                <h3>Goa</h3>
+                            </div>
+                    </div>
+                    <div class="expore-card">
+                        <img src="https://i.pinimg.com/736x/9a/89/90/9a8990354947d0580ac088447c3ef2df.jpg" class="explore-card-img">
+                        <div class="information">
+                            <h2>Lucknow</h2>
+                            <h3>Uttar Pradesh</h3>
+                        </div>
+                    </div>
+                    <div class="expore-card">
+                        <img src="https://i.pinimg.com/1200x/a6/36/47/a636475d67c3c1eaa57ae785981b9582.jpg" class="explore-card-img">
+                        <div class="information">
+                            <h2>Hyderabad</h2>
+                            <h3>Telangana</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <h3>TRENDING HOTEL CITIES</h3>
+                <ul>
+                    <li>Hotels in Goa</li>
+                    <li>Hotels in Delhi</li>
+                    <li>Hotels in Mumbai</li>
+                    <li>Hotels in Banglore</li>
+                    <li>Hotels in Hyderabad</li>
+                    <li>Hotels in Pune</li>
+                    <li>Hotels in Agra</li>
+                    <li>Hotels in Jaipur</li>
+                    <li>Hotels in Ahmedabad</li>
+                    <li>Hotels in Mysore</li>
+                    <li>Hotels in Munnar</li>
+                    <li>Hotels in Chennai</li>
+                    <li>Hotels in Madurai</li>
+                    <li>Hotels in Kolkata</li>
+                    <li>Hotels in Ooty</li>
+                    <li>Hotels in Mahabaleshwar</li>
+                    <li>Hotels in Shimla</li>
+                    <li>Hotels in Manali</li>
+                    <li>Hotels in Nainital</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>Top States</h3>
+                <ul>
+                    <li>Andhra Pradesh</li>
+                    <li>Arunachal Prades</li>
+                    <li>Assam</li>
+                    <li>Bihar</li>
+                    <li>Chhattisgarh</li>
+                    <li>Goa</li>
+                    <li>gujarat</li>
+                    <li>Haryana</li>
+                    <li>Himachal Pradesh</li>
+                    <li>Maharastra</li>
+                    <li>Manipur</li>
+                    <li>Meghalaya</li>
+                    <li>Mizoram</li>
+                    <li>Nagaland</li>
+                    <li>Odisha</li>
+                    <li>Punjab</li>
+                    <li>rajasthan</li>
+                    <li>sikkim</li>
+                    <li>Tamil Nadu</li>
+                    <li>Telangana</li>
+                    <li>Tripura</li>
+                    <li>Uttar Prades</li>
+                    <li>Uttarakhand</li>
+                    <li>west Bengal</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>support & FAQs</h3>
+                <ul>
+                    <li>Your bookings</li>
+                    <li>FAQs</li>
+                    <li>Contact us</li>
+                    <li>review a property</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>For suppliers, affiliates and the media</h3>
+                <ul>
+                    <li>Affilate with us</li>
+                    <li>New rooms</li>
+                    <li>Expedia Partner SOlution</li>
+                    <li>Promote with us</li>
+                    <li>Travel Agent</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>Policies</h3>
+                <ul>
+                    <li>Trems & Conditions</li>
+                    <li>Privacy</li>
+                    <li>Cookies</li>
+                    <li>Contact guidelines and reporting content</li>
+                    
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>Other information</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Carrers</li>
+                    <li>Travel Guides</li>
+                </ul>
+            </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+header a:hover {
+  color: #00bfff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+}
+
+#icon {
+  font-size: 1.8rem;
+  color: #333;
+  margin-right: 5px;
+}
+
+#search-div {
+  width: 40%;
+  position: relative;
+}
+
+#search {
+  width: 100%;
+  height: 36px;
+  border-radius: 18px;
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+}
+
+.fa-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+/* Layout */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 70px;
+}
+
+
+
+
+
+
+#left-adds-aside,
+#right-adds-container {
+  width: 20%;
+  height: auto;
+  padding: 1rem;
+  color: white;
+}
+
+#left-adds-aside {
+  background-color: black;
+}
+
+
+
+#left-adds-aside {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
+  height: 100%;
+}
+
+#left-adds-aside h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.4rem;
+  color: #444;
+}
+
+#left-adds-aside h2 {
+  font-size: 1rem;
+  margin: 1rem 0 0.4rem;
+  color: #555;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.1);
+  accent-color: #3f51b5;
+}
+
+.filter-option label {
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 0.5rem 0;
+  accent-color: #3f51b5;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  cursor: pointer;
+}
+
+
+section {
+  width: 60%;
+  padding: 2%;
+}
+
+/* PG Card */
+.img-container-div {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 50vh;
+  position: relative;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.img-container-div:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pg-img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pg-details {
+  padding: 1.5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pg-title {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.pg-desc,
+.pg-location,
+.pg-breakfast {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.pg-extra-info {
+  margin-top: 1rem;
+}
+
+.pg-advance,
+.pg-pay-later {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.pg-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#rating {
+  background-color: green;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 2rem;
+}
+
+.rating-text {
+  font-size: 0.95rem;
+  color: #444;
+  font-weight: 600;
+}
+
+#price {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+#price del {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.price-current {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+footer {
+  background-color: #141414;
+  color: #ddd;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  
+}
+
+.foot {
+  margin: 1rem 0;
+}
+
+.foot h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.foot ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.foot ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.foot ul li:hover {
+  color: #00bfff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  #left-adds-aside,
+  #right-adds-container {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #search-div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: sticky;
+    top: 0%;
+  }
+
+  #search-div {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #profile{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+  .img-container-div {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pg-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pg-details {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+  }
+  .pg-title {
+    font-size: 1.2rem;
+  }
+
+  .pg-desc,
+  .pg-location,
+  .pg-breakfast,
+  .pg-advance,
+  .pg-pay-later,
+  .rating-text,
+  .price-current {
+    font-size: 0.9rem;
+  }
+
+  #price {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.back-button:hover {
+    background: #00bfff;
+    color: white;
+    border-color: #00bfff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.back-button i {
+    font-size: 16px;
+}
+
+/* Ensure header has relative positioning for absolute back button */
+header {
+    position: relative;
+}
+
+/* Responsive back button */
+@media screen and (max-width: 768px) {
+    .back-button {
+        left: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .back-button i {
+        font-size: 14px;
+    }
+}

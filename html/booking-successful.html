@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Successful - NORI.com</title>
+    <link rel="stylesheet" href="../css/booking-succesfful.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/booking-successful.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-button">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
+            <a href="Home_Page.html" id="logo-name">NORI.com</a>
+        </div>
+        <a href="Home_Page.html" class="header-right-content">Home</a>
+        <a href="#" class="header-right-content" id="support">Support</a>
+        <a href="#" class="header-right-content">Trips</a>
+
+        <div id="profile">
+            <div id="div-icon">
+                <i class='fa fa-user-circle' id="icon"></i>
+            </div>
+            <a href="Login_Page.html" name="profile" class="header-right-content">Login</a>
+            <a href="signup_page.html" class="header-right-content">Sign Up</a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar">
+        <a href="Home_Page.html">Home</a>
+        <a href="pg-page.html">PG</a>
+        <a href="resort-page.html">Resort</a>
+        <a href="lodge-page.html">Lodge</a>
+        <a href="camp-house-page.html">Camp House</a>
+        <a href="pent-house-page.html">Pent House</a>
+        <a href="private-capsule.html">Private Capsule</a>
+        <a href="villa-page.html">Villa</a>
+        <a href="Login_Page.html">Login</a>
+        <a href="signup_page.html">Sign Up</a>
+    </nav>
+
+    <main class="success-container">
+        <div class="success-card">
+            <div class="success-icon">
+                <i class="fa fa-check-circle"></i>
+            </div>
+            
+            <h1 class="success-title">Booking Confirmed!</h1>
+            <p class="success-message">Your room has been successfully booked. We've sent a confirmation email with all the details.</p>
+            
+            <div class="booking-details">
+                <h2>Booking Details</h2>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Booking ID:</span>
+                        <span class="detail-value" id="booking-id">NORI-2024-001</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Guest Name:</span>
+                        <span class="detail-value" id="guest-name">John Doe</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Room Type:</span>
+                        <span class="detail-value" id="room-type">Deluxe Room</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Check-in Date:</span>
+                        <span class="detail-value" id="checkin-date">15 Dec 2024</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Check-out Date:</span>
+                        <span class="detail-value" id="checkout-date">18 Dec 2024</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Total Nights:</span>
+                        <span class="detail-value" id="total-nights">3</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Total Amount:</span>
+                        <span class="detail-value" id="total-amount">₹7,750</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Email:</span>
+                        <span class="detail-value" id="guest-email">john.doe@email.com</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Phone:</span>
+                        <span class="detail-value" id="guest-phone">+91 98765 43210</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="Home_Page.html" class="btn btn-primary">
+                    <i class="fa fa-home"></i> Back to Home
+                </a>
+                <a href="#" class="btn btn-secondary" id="download-receipt">
+                    <i class="fa fa-download"></i> Download Receipt
+                </a>
+                <a href="#" class="btn btn-outline" id="view-bookings">
+                    <i class="fa fa-list"></i> View My Bookings
+                </a>
+            </div>
+
+            <div class="additional-info">
+                <h3>What's Next?</h3>
+                <ul>
+                    <li><i class="fa fa-envelope"></i> Check your email for booking confirmation</li>
+                    <li><i class="fa fa-phone"></i> You'll receive a call from our team within 24 hours</li>
+                    <li><i class="fa fa-map-marker"></i> Location details and directions will be shared</li>
+                    <li><i class="fa fa-clock-o"></i> Check-in time: 2:00 PM, Check-out time: 11:00 AM</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NORI.com</h3>
+                <p>Your trusted partner for finding the perfect accommodation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="Home_Page.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fa fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa fa-envelope"></i> support@nori.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NORI.com. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

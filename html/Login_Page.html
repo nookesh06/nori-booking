@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Login_Page.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Login Page</title>
+    
+</head>
+<body>
+    <a href="javascript:history.back()" class="back-button">
+        <i class="fa fa-arrow-left"></i>
+    </a>
+    <section>
+       
+        <form action="../php/login_handler.php" method="POST" id="login_form">
+            <h1 id = "login_headline">Login Page</h1>
+            
+           <div id="form_inputs">
+                <div id="usr_input">
+                    <i class='fa fa-user-circle' id="user_icon"></i>
+                    <input type="text" id="usrname" class="inputs" name = "username"required>
+                    <label for="usrname" id = "usr_label">username/email id</label>
+                </div>
+                <div id="pswd_input">
+                    <i class='fa fa-eye-slash' id="user_pswd" onclick="password_show()"></i>
+                    <input type="password" id="pswd" class="inputs"name = "password" required>
+                    <label for="pswd">password</label>
+                </div>
+            </div>
+
+            <a href="" id = "forgot_pswd">Forgot password</a>
+            <button type="submit">Login</button>
+             <a href="signup_page.html" id="sign_up">SIGN UP</a>
+
+        </form>
+        <form action="" id = "signup_form">
+            <h1 id = "signup_healine">Welcome !</h1>
+            <div id = "icon_circle">
+                <i class="	fa fa-hotel" id = "shoping"></i>
+                <h2 id = "nori">NORI </h2>
+            </div>
+        </form>
+    </section>
+    <script src = "../javascript/loginPage.js"></script>
+</body>
+</html>

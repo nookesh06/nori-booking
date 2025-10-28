@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border: 2px solid rgba(128, 128, 128, 0.459);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#icon {
+  width: 100%;
+  height: 4rem;
+  background-color: gray;
+  border-radius: 0 0 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon_name {
+  color: ghostwhite;
+  font-size: 2rem;
+}
+
+#form_detials {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 1rem;
+  width: 50%;
+  max-width: 100%;
+}
+
+.inputs {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
+#sign_up_butt {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#sign_up_butt button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #04132b;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#e_pswd,#c_pswd{
+    position: relative;
+}
+#e_pswd_eye,#c_pswd_eye{
+    position:absolute;
+    right: 10%;
+    top:53%;
+    cursor: pointer;
+}
+/* Media Queries */
+
+@media screen and (min-width:321px) and (max-width: 768px) {
+
+   form {
+    padding: 15px;
+    
+  }
+  td,tr {
+    display: block;
+    width: 100%;
+    padding: 0; /* optional: reduce spacing issues */
+  }
+  #icon {
+    height: 3rem;
+  }
+
+  #icon_name {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+   .inputs {
+    max-width: 100%;
+    box-sizing: border-box; /* ensure padding doesn't overflow */
+  }
+  .eye{
+    position: absolute;
+    left: 92%;
+  }
+  #sign_up_butt button {
+    font-size: 0.95rem;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  #icon_name {
+    font-size: 1.3rem;
+  }
+
+  td {
+    padding: 0.5rem 0;
+   display: block;
+   width: 100%;
+  }
+
+  .inputs {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+ .eye{
+  position: absolute;
+  left: 78%;
+ }
+  
+}
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+    background: #00bfff;
+    color: white;
+    border-color: #00bfff;
+    transform: scale(1.1);
+}
+
+.back-button i {
+    font-size: 16px;
+}
+
+/* Responsive back button */
+@media screen and (max-width: 768px) {
+    .back-button {
+        left: 15px;
+        top: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .back-button i {
+        font-size: 14px;
+    }
+}
+
+
