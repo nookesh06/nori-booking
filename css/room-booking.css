@@ -538,7 +538,10 @@ header a:hover {
     display: flex;
     gap: 10px;
 }
-
+.booking-successful{
+    text-decoration: none;
+    flex: 1;
+}
 /* Footer */
 footer {
     background: #333;

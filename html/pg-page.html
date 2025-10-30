@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PG Listings - Nori.com</title>
- <link rel="stylesheet" href="../css/pg-page.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<script src="../javascript/pg-page.js" defer></script>
-  
+  <link rel="stylesheet" href="../css/pg-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="../javascript/pg-page.js" defer></script>
+
 </head>
+
 <body>
   <header>
     <a href="javascript:history.back()" class="back-button">
       <i class="fa fa-arrow-left"></i>
     </a>
     <div class="logo">
-      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo"/>
+      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo" />
       <a href="#" id="logo-name">NORI.com</a>
     </div>
     <div id="search-div">
       <input type="search" id="search" placeholder="Search PGs, Locations..." />
       <i class="fa fa-search"></i>
     </div>
-    <div id = "home"><a href="./index.html">Home</a></div>
+    <div id="home"><a href="../index.html">Home</a></div>
     <div id="profile">
       <i class="fa fa-user-circle" id="icon"></i>
       <a href="Login_Page.html" class="header-right-content">Login</a>
@@ -30,367 +32,396 @@
     </div>
   </header>
   <main class="main-content">
- <aside id="left-adds-aside">
-    <h1>Filter by</h1>
+    <aside id="left-adds-aside">
+      <h1>Filter by</h1>
 
-    <!-- Sharing -->
-    <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
+      <!-- Sharing -->
+      <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
 
-    <!-- Price -->
-    <h1>Price</h1>
+      <!-- Price -->
+      <h1>Price</h1>
 
-    <h2>Min range: ₹<span id="min-value">1000</span></h2>
-    <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
+      <h2>Min range: ₹<span id="min-value">1000</span></h2>
+      <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
 
-    <h2>Max range: ₹<span id="max-value">20000</span></h2>
-    <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
+      <h2>Max range: ₹<span id="max-value">20000</span></h2>
+      <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
 
-    <!-- Payment Type -->
-    <h2>Payment Type</h2>
-    <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
+      <!-- Payment Type -->
+      <h2>Payment Type</h2>
+      <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
 
-    <!-- Star Rating -->
-    <h2>Star Rating</h2>
-    <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
-    <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
-    <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
+      <!-- Star Rating -->
+      <h2>Star Rating</h2>
+      <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
+      <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
+      <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
 
-    <!-- Availability -->
-    <h2>Availability</h2>
-    <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available properties</label></div>
+      <!-- Availability -->
+      <h2>Availability</h2>
+      <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available
+          properties</label></div>
 
-    <!-- Accessibility -->
-    <h2>Accessibility</h2>
-    <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
-    <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals allowed</label></div>
-    <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility parking</label></div>
-  </aside>
+      <!-- Accessibility -->
+      <h2>Accessibility</h2>
+      <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
+      <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals
+          allowed</label></div>
+      <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility
+          parking</label></div>
+    </aside>
     <section>
       <!-- PG 1 -->
-      <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Luxe Stay PG</h1>
-          <p class="pg-desc">Sleeps 1 — Private Room</p>
-          <p class="pg-location">📍 Hyderabad</p>
-          <p class="pg-breakfast">🍽️ Breakfast Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹2000 advance</p>
-            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG" class="img" />
+          <div class="details">
+            <h1 class="title">Luxe Stay PG</h1>
+            <p class="desc">Sleeps 1 — Private Room</p>
+            <p class="location">📍 Hyderabad</p>
+            <p class="breakfast">🍽️ Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹2000 advance</p>
+              <p class="pay-later">💳 Reserve now, pay later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.7</span>
+              <span class="rating-text">Excellent</span>
+            </div>
+            <div id="price">
+              <ins><del>₹8500</del></ins>
+              <span class="price-current">₹6200</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.7</span>
-            <span class="rating-text">Excellent</span>
-          </div>
-          <div id="price">
-            <ins><del>₹8500</del></ins>
-            <span class="price-current">₹6200</span>
-          </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
+      </a>
 
       <!-- PG 2 -->
-      <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-bron/1.jpg" alt="Urban Nest PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Urban Nest PG</h1>
-          <p class="pg-desc">Sleeps 2 — Shared Room</p>
-          <p class="pg-location">📍 Bengaluru</p>
-          <p class="pg-breakfast">☕ Meals Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1500 advance</p>
-            <p class="pg-pay-later">💳 Pay at property</p>
-          </div>
-          <div class="pg-rating">
-            <span id="rating">4.3</span>
-            <span class="rating-text">Very Good</span>
-          </div>
-          <div id="price">
-            <ins><del>₹7000</del></ins>
-            <span class="price-current">₹5200</span>
-          </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
-        </div>
-      </div>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img src="https://alexandro.in/image/hyderabad/settl-bron/1.jpg" alt="Urban Nest PG" class="img" />
+          <div class="details">
+            <h1 class="title">Urban Nest PG</h1>
+            <p class="desc">Sleeps 2 — Shared Room</p>
+            <p class="location">📍 Bengaluru</p>
+            <p class="breakfast">☕ Meals Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1500 advance</p>
+              <p class="pay-later">💳 Pay at property</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.3</span>
+              <span class="rating-text">Very Good</span>
+            </div>
+            <div id="price">
+              <ins><del>₹7000</del></ins>
+              <span class="price-current">₹5200</span>
+            </div>
 
+          </div>
+        </div>
+      </a>
       <!-- PG 3 -->
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">Green Valley PG</h1>
+            <p class="desc">Sleeps 1 — Studio Room</p>
+            <p class="location">📍 Pune</p>
+            <p class="breakfast">🍱 Lunch & Dinner Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1000 advance</p>
+              <p class="pay-later">💳 Reserve & Pay Later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.8</span>
+              <span class="rating-text">Top Rated</span>
+            </div>
+            <div id="price">
+              <ins><del>₹9500</del></ins>
+              <span class="price-current">₹6999</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img
+            src="https://content.jdmagicbox.com/v2/comp/delhi/x4/011pxx11.xx11.250528150253.u5x4/catalogue/stay-zone-pg-noida-sector-66-noida-paying-guest-accommodations-for-men-1r7w1ny1ax-250.jpg"
+            alt="Green Valley PG" class="img" />
+          <div class="details">https
+            <h1 class="title">Comfort Nest PG</h1>
+            <p class="desc">Sleeps 1 — Private Room</p>
+            <p class="location">📍 Chennai</p>
+            <p class="breakfast">🍽️ Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1800 advance</p>
+              <p class="pay-later">💳 Reserve now, pay later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.6</span>
+              <span class="rating-text">Excellent</span>
+            </div>
+            <div id="price">
+              <ins><del>₹8200</del></ins>
+              <span class="price-current">₹5900</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2-8ArZHI0HwS8CwCOW8hXYofnroCETkpz8Q&s"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">Elite Haven PG</h1>
+            <p class="desc">Sleeps 1 — Deluxe Room</p>
+            <p class="location">📍 Bengaluru</p>
+            <p class="breakfast">☕ Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹2500 advance</p>
+              <p class="pay-later">💳 Reserve now, pay later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.8</span>
+              <span class="rating-text">Top Rated</span>
+            </div>
+            <div id="price">
+              <ins><del>₹9000</del></ins>
+              <span class="price-current">₹6800</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/707183518.jpg?k=34a55f9a0c0a81dfff1a559fa23e25741fdb20c1ecb871e29ebc2e8451756534&o=&hp=1"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">Pearl Residency PG</h1>
+            <p class="desc">Sleeps 2 — Shared Room</p>
+            <p class="location">📍 Ahmedabad</p>
+            <p class="breakfast">🍽️ Meals Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1000 advance</p>
+              <p class="pay-later">💳 Reserve now, pay later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.3</span>
+              <span class="rating-text">Good</span>
+            </div>
+            <div id="price">
+              <ins><del>₹7400</del></ins>
+              <span class="price-current">₹5600</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img src="https://www.colive.com/blog/wp-content/uploads/2018/04/qedqd.jpg" alt="Green Valley PG"
+            class="img" />
+          <div class="details">
+            <h1 class="title">Serene Stay PG</h1>
+            <p class="desc">Sleeps 1 — Deluxe Room</p>
+            <p class="location">📍 Coimbatore</p>
+            <p class="breakfast">🍛 Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹2000 advance</p>
+              <p class="pay-later">💳 Pay later option</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.8</span>
+              <span class="rating-text">Top Rated</span>
+            </div>
+            <div id="price">
+              <ins><del>₹9100</del></ins>
+              <span class="price-current">₹6900</span>
+            </div>
+
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">Blue Orchid PG</h1>
+            <p class="desc">Sleeps 1 — Private Room</p>
+            <p class="location">📍 Mumbai</p>
+            <p class="breakfast">🥣 Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹2000 advance</p>
+              <p class="pay-later">💳 Reserve now, pay later</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.7</span>
+              <span class="rating-text">Excellent</span>
+            </div>
+            <div id="price">
+              <ins><del>₹8800</del></ins>
+              <span class="price-current">₹6400</span>
+            </div>
+
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img
+            src="https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Jul/02/Photo_h400_w540/GR2-300739-1418987_400_540.jpeg"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">City Life PG</h1>
+            <p class="desc">Sleeps 2 — Shared Room</p>
+            <p class="location">📍 Gurugram</p>
+            <p class="breakfast">🍽️ Meals Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1500 advance</p>
+              <p class="pay-later">💳 Pay later option</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.5</span>
+              <span class="rating-text">Very Good</span>
+            </div>
+            <div id="price">
+              <ins><del>₹8200</del></ins>
+              <span class="price-current">₹6000</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
-      <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+      </a>
+      <a href="room-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+          <img
+            src="https://images.jdmagicbox.com/v2/comp/mumbai/m5/022pxx22.xx22.220624161531.t1m5/catalogue/stayzone-hostels-pvt-ltd-kharghar-sector-20-navi-mumbai-hostels-s9yj94dj2i.jpg"
+            alt="Green Valley PG" class="img" />
+          <div class="details">
+            <h1 class="title">The Nest PG</h1>
+            <p class="desc">Sleeps 1 — Private Room</p>
+            <p class="location">📍 Jaipur</p>
+            <p class="breakfast">🥗 Breakfast Included</p>
+            <div class="extra-info">
+              <p class="advance">₹1200 advance</p>
+              <p class="pay-later">💳 Pay at property</p>
+            </div>
+            <div class="rating">
+              <span id="rating">4.2</span>
+              <span class="rating-text">Good</span>
+            </div>
+            <div id="price">
+              <ins><del>₹7100</del></ins>
+              <span class="price-current">₹5300</span>
+            </div>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
-          </div>
-          <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
-          </div>          
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
-      </div>
+      </a>
     </section>
 
- 
+
   </main>
 
   <footer>
-            <div class="foot">
-                <h3>TRENDING HOTEL CITIES</h3>
-                <ul>
-                    <li>Hotels in Goa</li>
-                    <li>Hotels in Delhi</li>
-                    <li>Hotels in Mumbai</li>
-                    <li>Hotels in Banglore</li>
-                    <li>Hotels in Hyderabad</li>
-                    <li>Hotels in Pune</li>
-                    <li>Hotels in Agra</li>
-                    <li>Hotels in Jaipur</li>
-                    <li>Hotels in Ahmedabad</li>
-                    <li>Hotels in Mysore</li>
-                    <li>Hotels in Munnar</li>
-                    <li>Hotels in Chennai</li>
-                    <li>Hotels in Madurai</li>
-                    <li>Hotels in Kolkata</li>
-                    <li>Hotels in Ooty</li>
-                    <li>Hotels in Mahabaleshwar</li>
-                    <li>Hotels in Shimla</li>
-                    <li>Hotels in Manali</li>
-                    <li>Hotels in Nainital</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Top States</h3>
-                <ul>
-                    <li>Andhra Pradesh</li>
-                    <li>Arunachal Prades</li>
-                    <li>Assam</li>
-                    <li>Bihar</li>
-                    <li>Chhattisgarh</li>
-                    <li>Goa</li>
-                    <li>gujarat</li>
-                    <li>Haryana</li>
-                    <li>Himachal Pradesh</li>
-                    <li>Maharastra</li>
-                    <li>Manipur</li>
-                    <li>Meghalaya</li>
-                    <li>Mizoram</li>
-                    <li>Nagaland</li>
-                    <li>Odisha</li>
-                    <li>Punjab</li>
-                    <li>rajasthan</li>
-                    <li>sikkim</li>
-                    <li>Tamil Nadu</li>
-                    <li>Telangana</li>
-                    <li>Tripura</li>
-                    <li>Uttar Prades</li>
-                    <li>Uttarakhand</li>
-                    <li>west Bengal</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>support & FAQs</h3>
-                <ul>
-                    <li>Your bookings</li>
-                    <li>FAQs</li>
-                    <li>Contact us</li>
-                    <li>review a property</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>For suppliers, affiliates and the media</h3>
-                <ul>
-                    <li>Affilate with us</li>
-                    <li>New rooms</li>
-                    <li>Expedia Partner SOlution</li>
-                    <li>Promote with us</li>
-                    <li>Travel Agent</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Policies</h3>
-                <ul>
-                    <li>Trems & Conditions</li>
-                    <li>Privacy</li>
-                    <li>Cookies</li>
-                    <li>Contact guidelines </li>
-                    
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Other information</h3>
-                <ul>
-                    <li>About us</li>
-                    <li>Carrers</li>
-                    <li>Travel Guides</li>
-                </ul>
-            </div>
-</footer>
+    <div class="foot">
+      <h3>TRENDING HOTEL CITIES</h3>
+      <ul>
+        <li>Hotels in Goa</li>
+        <li>Hotels in Delhi</li>
+        <li>Hotels in Mumbai</li>
+        <li>Hotels in Banglore</li>
+        <li>Hotels in Hyderabad</li>
+        <li>Hotels in Pune</li>
+        <li>Hotels in Agra</li>
+        <li>Hotels in Jaipur</li>
+        <li>Hotels in Ahmedabad</li>
+        <li>Hotels in Mysore</li>
+        <li>Hotels in Munnar</li>
+        <li>Hotels in Chennai</li>
+        <li>Hotels in Madurai</li>
+        <li>Hotels in Kolkata</li>
+        <li>Hotels in Ooty</li>
+        <li>Hotels in Mahabaleshwar</li>
+        <li>Hotels in Shimla</li>
+        <li>Hotels in Manali</li>
+        <li>Hotels in Nainital</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Top States</h3>
+      <ul>
+        <li>Andhra Pradesh</li>
+        <li>Arunachal Prades</li>
+        <li>Assam</li>
+        <li>Bihar</li>
+        <li>Chhattisgarh</li>
+        <li>Goa</li>
+        <li>gujarat</li>
+        <li>Haryana</li>
+        <li>Himachal Pradesh</li>
+        <li>Maharastra</li>
+        <li>Manipur</li>
+        <li>Meghalaya</li>
+        <li>Mizoram</li>
+        <li>Nagaland</li>
+        <li>Odisha</li>
+        <li>Punjab</li>
+        <li>rajasthan</li>
+        <li>sikkim</li>
+        <li>Tamil Nadu</li>
+        <li>Telangana</li>
+        <li>Tripura</li>
+        <li>Uttar Prades</li>
+        <li>Uttarakhand</li>
+        <li>west Bengal</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>support & FAQs</h3>
+      <ul>
+        <li>Your bookings</li>
+        <li>FAQs</li>
+        <li>Contact us</li>
+        <li>review a property</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>For suppliers, affiliates and the media</h3>
+      <ul>
+        <li>Affilate with us</li>
+        <li>New rooms</li>
+        <li>Expedia Partner SOlution</li>
+        <li>Promote with us</li>
+        <li>Travel Agent</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Policies</h3>
+      <ul>
+        <li>Trems & Conditions</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+        <li>Contact guidelines </li>
+
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Other information</h3>
+      <ul>
+        <li>About us</li>
+        <li>Carrers</li>
+        <li>Travel Guides</li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>

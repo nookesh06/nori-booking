@@ -157,6 +157,9 @@ section {
 }
 
 /* PG Card */
+.details-link{
+  text-decoration: none;
+}
 .img-container-div {
   display: flex;
   flex-direction: row;
@@ -169,19 +172,21 @@ section {
   position: relative;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
-
+.book-now-btn{
+  text-decoration: none;
+}
 .img-container-div:hover {
   transform: scale(1.01);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
 
-.pg-img {
+.img {
   width: 40%;
   height: 100%;
   object-fit: cover;
 }
 
-.pg-details {
+.details {
   padding: 1.5rem;
   width: 60%;
   display: flex;
@@ -189,33 +194,34 @@ section {
   justify-content: space-between;
 }
 
-.pg-title {
+.title {
   font-size: 1.5rem;
   color: #222;
   margin-bottom: 0.5rem;
 }
 
-.pg-desc,
-.pg-location,
-.pg-breakfast {
+.desc,
+.location,
+.breakfast ,
+.state{
   font-size: 1rem;
   color: #555;
   margin-bottom: 0.3rem;
 }
 
-.pg-extra-info {
+.extra-info {
   margin-top: 1rem;
 }
 
-.pg-advance,
-.pg-pay-later {
+.advance,
+.pay-later {
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 0.2rem;
   font-weight: 500;
 }
 
-.pg-rating {
+.rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -248,7 +254,7 @@ section {
   bottom: 1rem;
   display: flex;
   gap: 0.8rem;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   align-items: center;
 }
 
@@ -261,27 +267,6 @@ section {
   font-size: 1.3rem;
   font-weight: bold;
   color: #e63946;
-}
-
-.book-now-btn {
-  display: inline-block;
-  background: #00bfff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 0.5px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-  width: 80%;
-  margin:auto;
-}
-
-.book-now-btn:hover {
-  background: #0099cc;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 footer {
@@ -358,12 +343,12 @@ footer {
     height: auto;
   }
 
-  .pg-img {
+  .img {
     width: 100%;
     height: auto;
   }
 
-  .pg-details {
+  .details {
     width: 100%;
     padding: 1rem;
   }
@@ -375,17 +360,18 @@ footer {
     top: 15%;
     right: 5%;
   }
-  .pg-title {
+  .title {
     font-size: 1.2rem;
   }
 
-  .pg-desc,
-  .pg-location,
-  .pg-breakfast,
-  .pg-advance,
-  .pg-pay-later,
+  .desc,
+  .location,
+  .breakfast,
+  .advance,
+  .pay-later,
   .rating-text,
-  .price-current {
+  .price-current,
+  .state {
     font-size: 0.9rem;
   }
 

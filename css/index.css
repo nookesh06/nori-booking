@@ -70,71 +70,11 @@ header {
      #icon {
       margin-right: 5px;
     }
-/* Hamburger icon */
-    .menu-toggle {
+
+    .sidebar{
       display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
     }
 
-    .menu-toggle span {
-      height: 3px;
-      width: 25px;
-      background-color: black;
-      transition: 0.3s;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    /* Sidebar */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      height: 100%;
-      width: 200px;
-      background-color: #444;
-      display: flex;
-      flex-direction: column;
-      padding-top: 60px;
-      transition: left 0.3s ease-in-out;
-      z-index: 999;
-    }
-
-    .sidebar a {
-      color: white;
-      padding: 15px 20px;
-      text-decoration: none;
-      border-bottom: 1px solid #555;
-    }
-
-    .sidebar.show {
-      left: 0;
-    }
-
-    /* Hamburger animation */
-    .menu-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(6px, -6px);
-    }
 
     
 /* Section Layout */
@@ -150,6 +90,8 @@ section {
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 90%;
+  filter: blur(1.7px);
 }
 
 /* Input Container */
@@ -161,7 +103,6 @@ section {
   transform: translate(-50%, -50%);
   width: 75%;
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   padding: 1.5rem;
   border-radius: 10px;
@@ -196,6 +137,7 @@ section {
   background: #fff;
   transition: 0.2s ease all;
   padding: 0 4px;
+ 
 }
 
 .input-boxes input:focus + label,
@@ -205,6 +147,13 @@ section {
   font-size: 0.75rem;
   font-weight: 600;
   color: #007bff;
+}
+
+#rooms-guest{
+  left: 0.6rem;
+  top: -0.6rem;
+  font-size: 0.75rem;
+color: #007bff;
 }
 .search-button{
   width: 10%;
@@ -220,6 +169,20 @@ section {
  border: none;
  font-size: 1rem;
  font-weight: 500;
+}
+
+.room-options{
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+
+}
+.adult-count,.child-count,.room-title,.adults{
+  color: #007bff;
 }
 
 /* Headings */
@@ -270,7 +233,10 @@ h1 {
 }
 
 /* Top Items */
-
+.top-items-details{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.959);
+}
 .top-items-card{
    overflow: hidden;
    border-radius: 10px 10px 0px 0px;
@@ -299,19 +265,19 @@ h1 {
   border: none;
 }
 
-.top-items-card-information {
+.top-items-details .top-items-card-information {
   padding: 0.5rem;
   height:50% ;
   background-color: rgb(249, 248, 248);
   border-radius: 0px 0px 10px 10px;
 }
 .top-items-card .offer{
-  width: 20%;
-  background-color: rgb(255, 4, 4);
+  width: 30%;
+  background-color: rgba(231, 10, 10, 0.918);
 }
 .name{
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
 }
 .top-items-card .price{
   font-size: 1.2rem;
@@ -322,7 +288,9 @@ h1 {
   font-size: 0.75rem;
   font-weight: 600;
 }
-
+.rating-div{
+  margin-bottom: 0.6rem;
+}
 /* Explore Section */
 #explore-card-container {
   width: 100%;
@@ -422,14 +390,6 @@ h1 {
   color: white;
   cursor: pointer;
 }
-.count-button{
-  background-color: rgb(76, 166, 226);
-  border: none;
-  width: 20%;
-  height: 5vh;
-  margin-top: 1rem;
-  border-radius: 10px;
-}
 #add-room {
   background-color: #007bff;
   width: 50%;
@@ -439,13 +399,58 @@ h1 {
   background-color: #28a745;
   width: 40%;
 }
-
+.adult-count,.children-count,.room-number{
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #007bff;
+}
 .remove-room {
   background-color: #dc3545;
   text-align: center;
   margin: 2%;
   width: 90%;
 }
+.guest-count {
+  margin-top: 0.8rem;
+}
+
+.guest-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.label {
+  width: 80px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.count-button {
+  background-color: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.count-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.adult-count, .children-count {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #007bff;
+  width: 20px;
+  text-align: center;
+}
+
 
 /* Footer Section */
 footer {
@@ -480,203 +485,84 @@ footer {
 .foot ul li:hover {
   color: #00bfff;
 }
-@media screen and (min-width: 320px) and (max-width:767px) {
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 101;
+  }
+  .toggle{
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  }
+  .menu-toggle.change #toggle1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
 
-  header .logo{
-  width: 30%;
-  height: 5vh;
- 
-}
-header #logo{
-  width: 45%;
-  height: 100%;
-  
-}
+  }
+  .menu-toggle.change #toggle2 {
+    opacity: 0;
+  }
+  .menu-toggle.change #toggle3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  .sidebar{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    height: 100%;
+    width: 200px;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
 
-
-  header .header-right-content{
+  }.header-right-content{
     display: none;
   }
-      #profile {
-        display: none;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-      
-  /* Section */
-  section {
-    
-    width: 100%;
-    padding: 6rem 1rem 1rem 1rem; /* top padding for header */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .logo {
+    margin-left: 20px;
   }
-
-  #main_image {
-    display: none; /* Hide large image on small screen */
+  #icon {
+    left: 0;
+    margin-right: auto;
   }
-
-  /* Input Form */
   .inputs {
-    width: 95%;
-    position: relative;
-    margin-top: 0; /* remove manual spacing */
-    justify-content: center;
-    padding: 1rem;
-    
-  }
-
-  .input-boxes {
-    width: 100%;
-  }
-
-  .input-boxes input {
-    width: 100%;
-    padding: 0.9rem;
-    font-size: 1rem;
-    border-radius: 6px;
-  }
-.search-button{
-  width: 100%;
-}
-  #search-button {
-    width: 100%;
-    max-height: 3.5rem;
-    padding: 0.8rem;
-    font-size: 1rem;
-    position: static;
-    background-color: #007bff;
-    border-radius: 8px;
-  }
-
-  /* Headings */
-
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  /* Cards */
-  .card,
-  .top-items-card {
+    flex-direction: column;
     width: 90%;
-    height: auto;
-   
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    top: 15%;
   }
-
- 
-
-  /* Footer */
+  .search-button{
+    width: 100%;
+  }
+  .top-items-card{
+    flex: 0 0 40%;
+    height: auto;
+  }
+  #explore-card-container {
+    height: auto;
+  }
+  .expore-card {
+    width: 60%;
+    height: auto;
+  }
+  #fav-img {
+    height: auto;
+  }
+  .card{
+    flex:0 0 60%;
+    height: auto;
+  }
   footer {
     flex-direction: column;
-    padding: 2rem 1rem;
+    align-items: center;
     text-align: center;
   }
-
-  .foot {
-    flex: 1 1 100%;
-    margin-bottom: 1rem;
-  }
-
-  .foot h3 {
-    font-size: 1rem;
-  }
-
-  .foot ul {
-    padding: 0;
-  }
-
-  .foot ul li {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width:768px) {
-
-  .logo a{
-    font-size:1rem;
-  }
-  .logo{
-    width: 5%;
-  }
-  #logo{
-    width: 100%;
-    height: 100%;
-  }
-  .header-right-content{
-    display: flex;
-    position: relative;
-    left: 7%;
-  }
-  #icon{
-    left: 0%;
-  }
-   .expore-card{
-    width: 50%;
-   }
-   .search-button{
-    width: 20%;
-    height: 6vh;
-   }
-   #search-button{
-    width: 100%;
-   }
-.card{
-  flex:0 0 50%;
-}
-  }
-
-/* Back Button Styling */
-.back-button {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #333;
-    transition: all 0.3s ease;
-    z-index: 100;
-}
-
-.back-button:hover {
-    background: #00bfff;
-    color: white;
-    border-color: #00bfff;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.back-button i {
-    font-size: 16px;
-}
-
-/* Ensure header has relative positioning for absolute back button */
-header {
-    position: relative;
-}
-
-/* Responsive back button */
-@media screen and (max-width: 768px) {
-    .back-button {
-        left: 15px;
-        width: 35px;
-        height: 35px;
-    }
-    
-    .back-button i {
-        font-size: 14px;
-    }
 }

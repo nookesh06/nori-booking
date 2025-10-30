@@ -1,395 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PG Listings - Nori.com</title>
- <link rel="stylesheet" href="../css/pg-page.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<script src="../javascript/pg-page.js" defer></script>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pent-house Listings - Nori.com</title>
+  <link rel="stylesheet" href="../css/pg-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="../javascript/pg-page.js" defer></script>
+
 </head>
+
 <body>
   <header>
     <a href="javascript:history.back()" class="back-button">
       <i class="fa fa-arrow-left"></i>
     </a>
     <div class="logo">
-      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo"/>
+      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo" />
       <a href="#" id="logo-name">NORI.com</a>
     </div>
     <div id="search-div">
-      <input type="search" id="search" placeholder="Search PGs, Locations..." />
+      <input type="search" id="search" placeholder="Search Pent-houses, Locations..." />
       <i class="fa fa-search"></i>
     </div>
-    <div id = "home"><a href="./index.html">Home</a></div>
+    <div id="home"><a href="../index.html">Home</a></div>
     <div id="profile">
       <i class="fa fa-user-circle" id="icon"></i>
       <a href="#" class="header-right-content">Profile</a>
     </div>
   </header>
   <main class="main-content">
- <aside id="left-adds-aside">
-    <h1>Filter by</h1>
+    <aside id="left-adds-aside">
+      <h1>Filter by</h1>
 
-    <!-- Sharing -->
-    <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
+      <!-- Sharing -->
+      <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
 
-    <!-- Price -->
-    <h1>Price</h1>
+      <!-- Price -->
+      <h1>Price</h1>
 
-    <h2>Min range: ₹<span id="min-value">1000</span></h2>
-    <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
+      <h2>Min range: ₹<span id="min-value">1000</span></h2>
+      <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
 
-    <h2>Max range: ₹<span id="max-value">20000</span></h2>
-    <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
+      <h2>Max range: ₹<span id="max-value">20000</span></h2>
+      <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
 
-    <!-- Payment Type -->
-    <h2>Payment Type</h2>
-    <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
+      <!-- Payment Type -->
+      <h2>Payment Type</h2>
+      <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
 
-    <!-- Star Rating -->
-    <h2>Star Rating</h2>
-    <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
-    <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
-    <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
+      <!-- Star Rating -->
+      <h2>Star Rating</h2>
+      <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
+      <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
+      <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
 
-    <!-- Availability -->
-    <h2>Availability</h2>
-    <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available properties</label></div>
+      <!-- Availability -->
+      <h2>Availability</h2>
+      <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available
+          properties</label></div>
 
-    <!-- Accessibility -->
-    <h2>Accessibility</h2>
-    <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
-    <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals allowed</label></div>
-    <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility parking</label></div>
-  </aside>
+      <!-- Accessibility -->
+      <h2>Accessibility</h2>
+      <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
+      <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals
+          allowed</label></div>
+      <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility
+          parking</label></div>
+    </aside>
     <section>
       <!-- PG 1 -->
-      <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Luxe Stay PG</h1>
-          <p class="pg-desc">Sleeps 1 — Private Room</p>
-          <p class="pg-location">📍 Hyderabad</p>
-          <p class="pg-breakfast">🍽️ Breakfast Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹2000 advance</p>
-            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+      <a href="pent-house-booking.html" class="book-now-btn">
+        <div class="img-container-div">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubPEj2AKKuTevrM5s7x7kVgOvJkeaKOufyw&s"
+          alt="Luxe Stay PG" class="img" />
+        <div class="details">
+          <h1 class="title">Skyline Penthouse</h1>
+          <p class="desc">Sleeps 2 — Luxury Suite</p>
+          <p class="location">📍 Mumbai, Maharashtra</p>
+          <p class="breakfast">🍽️ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹5000 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.7</span>
-            <span class="rating-text">Excellent</span>
+          <div class="rating">
+            <span id="rating">4.9</span>
+            <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
-            <ins><del>₹8500</del></ins>
-            <span class="price-current">₹6200</span>
+            <ins><del>₹25000</del></ins>
+            <span class="price-current">₹17999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
+      </a>
 
       <!-- PG 2 -->
       <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-bron/1.jpg" alt="Urban Nest PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Urban Nest PG</h1>
-          <p class="pg-desc">Sleeps 2 — Shared Room</p>
-          <p class="pg-location">📍 Bengaluru</p>
-          <p class="pg-breakfast">☕ Meals Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1500 advance</p>
-            <p class="pg-pay-later">💳 Pay at property</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1nkkaMWt1JVCSYZLTR0gNjHjTEDCzJmqCQ&s"
+          alt="Urban Nest PG" class="img" />
+        <div class="details">
+          <h1 class="title">Ocean View Penthouse</h1>
+          <p class="desc">Sleeps 3 — Sea-Facing Suite</p>
+          <p class="location">📍 Goa</p>
+          <p class="breakfast">🍽️ Breakfast Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4000 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.3</span>
-            <span class="rating-text">Very Good</span>
+          <div class="rating">
+            <span id="rating">4.8</span>
+            <span class="rating-text">Premium Stay</span>
           </div>
           <div id="price">
-            <ins><del>₹7000</del></ins>
-            <span class="price-current">₹5200</span>
+            <ins><del>₹22000</del></ins>
+            <span class="price-current">₹16999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
 
       <!-- PG 3 -->
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaVPk_UMzb8IdRD3GdEZBJMI39ehsw_Su5Mw&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Cloud Nine Penthouse</h1>
+          <p class="desc">Sleeps 2 — Sky Suite</p>
+          <p class="location">📍 Bengaluru, Karnataka</p>
+          <p class="breakfast">🍽️ Breakfast & Wi-Fi Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4500 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹21000</del></ins>
+            <span class="price-current">₹15999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGtITn1ff0g3ems1DITWZ-dhBguMk76_HS1w&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Palm Retreat Penthouse</h1>
+          <p class="desc">Sleeps 4 — Family Suite</p>
+          <p class="location">📍 Kochi, Kerala</p>
+          <p class="breakfast">🍽️ Breakfast Included</p>
+          <div class="extra-info">
+            <p class="advance">₹3500 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.6</span>
+            <span class="rating-text">Coastal Comfort</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹19000</del></ins>
+            <span class="price-current">₹13999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUJCWGH4I3dSFdYsVwvgZboNAlXKnIb8JNhg&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">SkyDeck Penthouse</h1>
+          <p class="desc">Sleeps 2 — Rooftop View Suite</p>
+          <p class="location">📍 Pune, Maharashtra</p>
+          <p class="breakfast">🍽️ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4200 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
+          <div class="rating">
             <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+            <span class="rating-text">Luxury Stay</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹23000</del></ins>
+            <span class="price-current">₹16999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Majestic Heights Penthouse</h1>
+          <p class="desc">Sleeps 3 — Executive Suite</p>
+          <p class="location">📍 Delhi</p>
+          <p class="breakfast">🍽️ Breakfast Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4500 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹24000</del></ins>
+            <span class="price-current">₹17999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Elite Horizon Penthouse</h1>
+          <p class="desc">Sleeps 2 — Private Luxury Suite</p>
+          <p class="location">📍 Hyderabad, Telangana</p>
+          <p class="breakfast">🍽️ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4800 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
+          <div class="rating">
+            <span id="rating">4.9</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹25000</del></ins>
+            <span class="price-current">₹18999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1qLXmuuwZNtYOWCDYjEcV2H09dCeQ5SH14Q&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">The Royal Summit</h1>
+          <p class="desc">Sleeps 4 — Grand Penthouse</p>
+          <p class="location">📍 Jaipur, Rajasthan</p>
+          <p class="breakfast">🍽️ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹5000 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
+          <div class="rating">
             <span id="rating">4.8</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹26000</del></ins>
+            <span class="price-current">₹18999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Y-CEU1-EZQN3tK8QpNa6z4Y_DMvoJfaT-A&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Sunset Heights Penthouse</h1>
+          <p class="desc">Sleeps 2 — Scenic View Suite</p>
+          <p class="location">📍 Chennai, Tamil Nadu</p>
+          <p class="breakfast">🍽️ Breakfast Included</p>
+          <div class="extra-info">
+            <p class="advance">₹3800 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.5</span>
+            <span class="rating-text">Comfort Stay</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹20000</del></ins>
+            <span class="price-current">₹14999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ieY3cWYMHsGbSky2qo1zlMYrtK9qHvkY3w&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">BlueSky Residences</h1>
+          <p class="desc">Sleeps 3 — Luxury Rooftop Suite</p>
+          <p class="location">📍 Ahmedabad, Gujarat</p>
+          <p class="breakfast">🍽️ Breakfast & Wi-Fi Included</p>
+          <div class="extra-info">
+            <p class="advance">₹4200 advance</p>
+            <p class="pay-later">💳 Reserve now, pay later</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹23000</del></ins>
+            <span class="price-current">₹16999</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
     </section>
 
- 
+
   </main>
 
   <footer>
-            <div class="foot">
-                <h3>TRENDING HOTEL CITIES</h3>
-                <ul>
-                    <li>Hotels in Goa</li>
-                    <li>Hotels in Delhi</li>
-                    <li>Hotels in Mumbai</li>
-                    <li>Hotels in Banglore</li>
-                    <li>Hotels in Hyderabad</li>
-                    <li>Hotels in Pune</li>
-                    <li>Hotels in Agra</li>
-                    <li>Hotels in Jaipur</li>
-                    <li>Hotels in Ahmedabad</li>
-                    <li>Hotels in Mysore</li>
-                    <li>Hotels in Munnar</li>
-                    <li>Hotels in Chennai</li>
-                    <li>Hotels in Madurai</li>
-                    <li>Hotels in Kolkata</li>
-                    <li>Hotels in Ooty</li>
-                    <li>Hotels in Mahabaleshwar</li>
-                    <li>Hotels in Shimla</li>
-                    <li>Hotels in Manali</li>
-                    <li>Hotels in Nainital</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Top States</h3>
-                <ul>
-                    <li>Andhra Pradesh</li>
-                    <li>Arunachal Prades</li>
-                    <li>Assam</li>
-                    <li>Bihar</li>
-                    <li>Chhattisgarh</li>
-                    <li>Goa</li>
-                    <li>gujarat</li>
-                    <li>Haryana</li>
-                    <li>Himachal Pradesh</li>
-                    <li>Maharastra</li>
-                    <li>Manipur</li>
-                    <li>Meghalaya</li>
-                    <li>Mizoram</li>
-                    <li>Nagaland</li>
-                    <li>Odisha</li>
-                    <li>Punjab</li>
-                    <li>rajasthan</li>
-                    <li>sikkim</li>
-                    <li>Tamil Nadu</li>
-                    <li>Telangana</li>
-                    <li>Tripura</li>
-                    <li>Uttar Prades</li>
-                    <li>Uttarakhand</li>
-                    <li>west Bengal</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>support & FAQs</h3>
-                <ul>
-                    <li>Your bookings</li>
-                    <li>FAQs</li>
-                    <li>Contact us</li>
-                    <li>review a property</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>For suppliers, affiliates and the media</h3>
-                <ul>
-                    <li>Affilate with us</li>
-                    <li>New rooms</li>
-                    <li>Expedia Partner SOlution</li>
-                    <li>Promote with us</li>
-                    <li>Travel Agent</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Policies</h3>
-                <ul>
-                    <li>Trems & Conditions</li>
-                    <li>Privacy</li>
-                    <li>Cookies</li>
-                    <li>Contact guidelines </li>
-                    
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Other information</h3>
-                <ul>
-                    <li>About us</li>
-                    <li>Carrers</li>
-                    <li>Travel Guides</li>
-                </ul>
-            </div>
-</footer>
+    <div class="foot">
+      <h3>TRENDING HOTEL CITIES</h3>
+      <ul>
+        <li>Hotels in Goa</li>
+        <li>Hotels in Delhi</li>
+        <li>Hotels in Mumbai</li>
+        <li>Hotels in Banglore</li>
+        <li>Hotels in Hyderabad</li>
+        <li>Hotels in Pune</li>
+        <li>Hotels in Agra</li>
+        <li>Hotels in Jaipur</li>
+        <li>Hotels in Ahmedabad</li>
+        <li>Hotels in Mysore</li>
+        <li>Hotels in Munnar</li>
+        <li>Hotels in Chennai</li>
+        <li>Hotels in Madurai</li>
+        <li>Hotels in Kolkata</li>
+        <li>Hotels in Ooty</li>
+        <li>Hotels in Mahabaleshwar</li>
+        <li>Hotels in Shimla</li>
+        <li>Hotels in Manali</li>
+        <li>Hotels in Nainital</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Top States</h3>
+      <ul>
+        <li>Andhra Pradesh</li>
+        <li>Arunachal Prades</li>
+        <li>Assam</li>
+        <li>Bihar</li>
+        <li>Chhattisgarh</li>
+        <li>Goa</li>
+        <li>gujarat</li>
+        <li>Haryana</li>
+        <li>Himachal Pradesh</li>
+        <li>Maharastra</li>
+        <li>Manipur</li>
+        <li>Meghalaya</li>
+        <li>Mizoram</li>
+        <li>Nagaland</li>
+        <li>Odisha</li>
+        <li>Punjab</li>
+        <li>rajasthan</li>
+        <li>sikkim</li>
+        <li>Tamil Nadu</li>
+        <li>Telangana</li>
+        <li>Tripura</li>
+        <li>Uttar Prades</li>
+        <li>Uttarakhand</li>
+        <li>west Bengal</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>support & FAQs</h3>
+      <ul>
+        <li>Your bookings</li>
+        <li>FAQs</li>
+        <li>Contact us</li>
+        <li>review a property</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>For suppliers, affiliates and the media</h3>
+      <ul>
+        <li>Affilate with us</li>
+        <li>New rooms</li>
+        <li>Expedia Partner SOlution</li>
+        <li>Promote with us</li>
+        <li>Travel Agent</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Policies</h3>
+      <ul>
+        <li>Trems & Conditions</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+        <li>Contact guidelines </li>
+
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Other information</h3>
+      <ul>
+        <li>About us</li>
+        <li>Carrers</li>
+        <li>Travel Guides</li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>

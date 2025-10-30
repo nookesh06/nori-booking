@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;
+    height: 100vh;
+}
+
+#login_form {
+    width: 90%;
+    max-width: 360px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin: auto;
+}
+#login_headline {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #04132b 0px 2px 10px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+#form_inputs {
+    width: 100%;
+}
+
+#usr_input, #pswd_input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 12px 10px;
+    border: 2px solid #04132b;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    background-color: white;
+    padding: 0 5px;
+    color: #888;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.3s ease all;
+}
+
+.inputs:focus + label,
+.inputs:valid + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: black;
+}
+
+
+#user_icon, #user_pswd {
+    color: gray;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+input:focus {
+    caret-color: #0e1b2e;
+    border: 1px solid #04132b;
+    outline: 1px solid gray;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #04132b;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#forgot_pswd {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+
+#sign_up{
+    display: flex;
+    position: relative;
+    left: 40%;
+    margin-top: 5%;
+    
+}
+#signup_form {
+    background-color: gray;
+    width: 100%;
+    height: 60vh;
+    display: none; 
+    padding: 2rem;
+}
+
+#signup_healine {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#icon_circle {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoping {
+    font-size: 3rem;
+    color: gray;
+    position: relative;
+    bottom: 5%;
+    left: 25%;
+}
+
+#nori {
+    color: gray;
+    position: relative;
+    top: 20%;
+    right: 17%;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #0e1b2e;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* -------------------- Media Queries -------------------- */
+@media screen and (min-width:320px) and (max-width:767px)
+{
+    #login_form{
+        
+        justify-items:center;
+    }
+      button{
+        width:100%;
+        font-size: 1rem;
+    }
+   #sign_up{
+    margin: auto;
+    padding: 1rem 0rem 0rem 0rem;
+   }
+}
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+
+
+    #login_form {
+        width: 50%;
+       
+    }
+
+    #signup_form {
+        display: block;
+        width: 50%;
+        height: 100vh;
+        align-content: center;
+    }
+
+    #signup_healine {
+        font-size: 2.5rem;
+    }
+
+    #icon_circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    #shoping {
+        font-size: 4rem;
+    }
+  
+}
+
+@media (min-width: 1024px) {
+    #login_form {
+        width: 50%;
+        margin-right: auto;
+    }
+
+    #signup_form {
+        width: 50%;
+    }
+
+    #signup_healine {
+        font-size: 3rem;
+    }
+
+    #icon_circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    #shoping {
+        font-size: 5rem;
+    }
+}
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+    background: #00bfff;
+    color: white;
+    border-color: #00bfff;
+    transform: scale(1.1);
+}
+
+.back-button i {
+    font-size: 16px;
+}
+
+/* Responsive back button */
+@media screen and (max-width: 768px) {
+    .back-button {
+        left: 15px;
+        top: 15px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .back-button i {
+        font-size: 14px;
+    }
+}

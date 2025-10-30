@@ -1,395 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PG Listings - Nori.com</title>
- <link rel="stylesheet" href="../css/pg-page.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<script src="../javascript/pg-page.js" defer></script>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camp-houses Listings - Nori.com</title>
+  <link rel="stylesheet" href="../css/pg-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="../javascript/pg-page.js" defer></script>
+
 </head>
+
 <body>
   <header>
     <a href="javascript:history.back()" class="back-button">
       <i class="fa fa-arrow-left"></i>
     </a>
     <div class="logo">
-      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo"/>
+      <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo" />
       <a href="#" id="logo-name">NORI.com</a>
     </div>
     <div id="search-div">
-      <input type="search" id="search" placeholder="Search PGs, Locations..." />
+      <input type="search" id="search" placeholder="Search Camp-houses, Locations..." />
       <i class="fa fa-search"></i>
     </div>
-    <div id = "home"><a href="../index.html">Home</a></div>
+    <div id="home"><a href="../index.html">Home</a></div>
     <div id="profile">
       <i class="fa fa-user-circle" id="icon"></i>
       <a href="#" class="header-right-content">Profile</a>
     </div>
   </header>
   <main class="main-content">
- <aside id="left-adds-aside">
-    <h1>Filter by</h1>
+    <aside id="left-adds-aside">
+      <h1>Filter by</h1>
 
-    <!-- Sharing -->
-    <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
-    <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
+      <!-- Sharing -->
+      <div class="filter-option"><input type="checkbox" id="s1"><label for="s1">1 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s2"><label for="s2">2 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s3"><label for="s3">3 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s4"><label for="s4">4 Sharing</label></div>
+      <div class="filter-option"><input type="checkbox" id="s5"><label for="s5">5 Sharing</label></div>
 
-    <!-- Price -->
-    <h1>Price</h1>
+      <!-- Price -->
+      <h1>Price</h1>
 
-    <h2>Min range: ₹<span id="min-value">1000</span></h2>
-    <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
+      <h2>Min range: ₹<span id="min-value">1000</span></h2>
+      <input type="range" id="min-range" min="1000" max="20000" step="500" value="1000">
 
-    <h2>Max range: ₹<span id="max-value">20000</span></h2>
-    <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
+      <h2>Max range: ₹<span id="max-value">20000</span></h2>
+      <input type="range" id="max-range" min="1000" max="20000" step="500" value="20000">
 
-    <!-- Payment Type -->
-    <h2>Payment Type</h2>
-    <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
+      <!-- Payment Type -->
+      <h2>Payment Type</h2>
+      <div class="filter-option"><input type="checkbox" id="pay"><label for="pay">Reserve now, pay later</label></div>
 
-    <!-- Star Rating -->
-    <h2>Star Rating</h2>
-    <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
-    <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
-    <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
+      <!-- Star Rating -->
+      <h2>Star Rating</h2>
+      <div class="filter-option"><input type="checkbox" id="r5"><label for="r5">5</label></div>
+      <div class="filter-option"><input type="checkbox" id="r4"><label for="r4">4</label></div>
+      <div class="filter-option"><input type="checkbox" id="r3"><label for="r3">3</label></div>
 
-    <!-- Availability -->
-    <h2>Availability</h2>
-    <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available properties</label></div>
+      <!-- Availability -->
+      <h2>Availability</h2>
+      <div class="filter-option"><input type="checkbox" id="avail"><label for="avail">Only show available
+          properties</label></div>
 
-    <!-- Accessibility -->
-    <h2>Accessibility</h2>
-    <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
-    <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals allowed</label></div>
-    <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility parking</label></div>
-  </aside>
+      <!-- Accessibility -->
+      <h2>Accessibility</h2>
+      <div class="filter-option"><input type="checkbox" id="elevator"><label for="elevator">Elevator</label></div>
+      <div class="filter-option"><input type="checkbox" id="animals"><label for="animals">Service animals
+          allowed</label></div>
+      <div class="filter-option"><input type="checkbox" id="wheelchair"><label for="wheelchair">Wheelchair accessibility
+          parking</label></div>
+    </aside>
     <section>
       <!-- PG 1 -->
       <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Luxe Stay PG</h1>
-          <p class="pg-desc">Sleeps 1 — Private Room</p>
-          <p class="pg-location">📍 Hyderabad</p>
-          <p class="pg-breakfast">🍽️ Breakfast Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹2000 advance</p>
-            <p class="pg-pay-later">💳 Reserve now, pay later</p>
+          <img src="https://m.media-amazon.com/images/I/81pSTzxLxlL._AC_UF894,1000_QL80_.jpg" alt="Luxe Stay PG"
+          class="img" />
+                  <a href="camp-house-booking.html" class="details-link">
+
+        <div class="details">
+          <h1 class="title">Mountain Mist Camp</h1>
+          <p class="desc">Sleeps 2 — Nature Tent</p>
+          <p class="location">📍 Munnar, Kerala</p>
+          <p class="breakfast">☕ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1000 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.7</span>
-            <span class="rating-text">Excellent</span>
+          <div class="rating">
+            <span id="rating">4.4</span>
+            <span class="rating-text">Very Good</span>
           </div>
           <div id="price">
-            <ins><del>₹8500</del></ins>
-            <span class="price-current">₹6200</span>
+            <ins><del>₹8000</del></ins>
+            <span class="price-current">₹5600</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+          </a>
         </div>
+        
       </div>
 
       <!-- PG 2 -->
       <div class="img-container-div">
-        <img src="https://alexandro.in/image/hyderabad/settl-bron/1.jpg" alt="Urban Nest PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Urban Nest PG</h1>
-          <p class="pg-desc">Sleeps 2 — Shared Room</p>
-          <p class="pg-location">📍 Bengaluru</p>
-          <p class="pg-breakfast">☕ Meals Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1500 advance</p>
-            <p class="pg-pay-later">💳 Pay at property</p>
+        <img src="https://i.pinimg.com/736x/6f/5f/14/6f5f14a9d379fd39547169f7de61393a.jpg" alt="Urban Nest PG"
+          class="img" />
+        <div class="details">
+          <h1 class="title">Forest Breeze Camp</h1>
+          <p class="desc">Sleeps 2 — Deluxe Tent</p>
+          <p class="location">📍 Coorg, Karnataka</p>
+          <p class="breakfast">🔥 Bonfire & Meals Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1200 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.3</span>
-            <span class="rating-text">Very Good</span>
+          <div class="rating">
+            <span id="rating">4.5</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹7000</del></ins>
-            <span class="price-current">₹5200</span>
+            <ins><del>₹8500</del></ins>
+            <span class="price-current">₹5900</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
 
       <!-- PG 3 -->
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStUEzvENlXmV-ucVOWHLF-58UPevUXepTsEg&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">River Edge Camp</h1>
+          <p class="desc">Sleeps 3 — Riverside Tent</p>
+          <p class="location">📍 Rishikesh, Uttarakhand</p>
+          <p class="breakfast">🍱 Meals & Rafting Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1500 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
+          <div class="rating">
+            <span id="rating">4.6</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹9000</del></ins>
+            <span class="price-current">₹6200</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://i.pinimg.com/474x/b4/18/54/b41854fd64a24edda243a666cece561e.jpg" alt="Green Valley PG"
+          class="img" />
+        <div class="details">
+          <h1 class="title">Forest Pearl Camp</h1>
+          <p class="desc">Sleeps 2 — Luxury Tent</p>
+          <p class="location">📍 Jaisalmer, Rajasthan</p>
+          <p class="breakfast">🍛 Dinner & Cultural Show Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1800 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
+          <div class="rating">
             <span id="rating">4.8</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
             <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <span class="price-current">₹6700</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJyZEtCHcnI0ahSA9YOzpUtF96_4co3c6vA&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Green Valley Camp</h1>
+          <p class="desc">Sleeps 2 — Nature View Tent</p>
+          <p class="location">📍 Wayanad, Kerala</p>
+          <p class="breakfast">☕ Breakfast & Bonfire Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1300 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.5</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹8700</del></ins>
+            <span class="price-current">₹6000</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
+
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOf79IRNsVjZMUCiGbPJhP6TQWBTn41PW3w&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Wildwood Camp</h1>
+          <p class="desc">Sleeps 3 — Jungle Tent</p>
+          <p class="location">📍 Jim Corbett, Uttarakhand</p>
+          <p class="breakfast">🍱 All Meals Included</p>
+          <div class="extra-info">
+            <p class="advance">₹2000 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹9800</del></ins>
+            <span class="price-current">₹6900</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img
+          src="https://img.hireacamp.com/t4gGXkpbfVGn9mUAz2oSsPU9Cr_rYae8caSPxE-z/fit-in/3840x3840/filters:quality(75)/uploads/fb19399af98f4fd5b248b077261c9cd0.jpg"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Nature Nest Camp</h1>
+          <p class="desc">Sleeps 2 — Garden Tent</p>
+          <p class="location">📍 Manali, Himachal Pradesh</p>
+          <p class="breakfast">🔥 Bonfire & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1600 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
+          <div class="rating">
+            <span id="rating">4.6</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹8800</del></ins>
+            <span class="price-current">₹6400</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf3OnCkarb7qjeUearh-hVgPoJI1mbH6H31Q&s"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Blue River Camp</h1>
+          <p class="desc">Sleeps 3 — Riverside Camp</p>
+          <p class="location">📍 Alleppey, Kerala</p>
+          <p class="breakfast">☕ Breakfast & Boating Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1200 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.3</span>
+            <span class="rating-text">Very Good</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹7800</del></ins>
+            <span class="price-current">₹5400</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img
+          src="https://media.istockphoto.com/id/1276977005/photo/scenic-view-of-the-exterior-of-a-rural-rustic-wooden-camp-house-used-for-fishing-and-hunting.jpg?s=612x612&w=0&k=20&c=oDL9oshAX7CGOhYuNVx3NqKYMOkHJCTpdEOdw3jTUWA="
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Lake Dunes Camp</h1>
+          <p class="desc">Sleeps 2 — Royal Tent</p>
+          <p class="location">📍 Pushkar, Rajasthan</p>
+          <p class="breakfast">🍱 Dinner & Camel Ride Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1800 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
+          <div class="rating">
             <span id="rating">4.8</span>
             <span class="rating-text">Top Rated</span>
           </div>
           <div id="price">
             <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <span class="price-current">₹6700</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
       <div class="img-container-div">
-        <img src="https://img.cofynd.com/images/latest_images_2024/70db45d9a30199d2875c5b0795e22c203830ae74.webp" alt="Green Valley PG" class="pg-img" />
-        <div class="pg-details">
-          <h1 class="pg-title">Green Valley PG</h1>
-          <p class="pg-desc">Sleeps 1 — Studio Room</p>
-          <p class="pg-location">📍 Pune</p>
-          <p class="pg-breakfast">🍱 Lunch & Dinner Included</p>
-          <div class="pg-extra-info">
-            <p class="pg-advance">₹1000 advance</p>
-            <p class="pg-pay-later">💳 Reserve & Pay Later</p>
+        <img src="https://images-cdn.ubuy.co.in/660b8b22caa6286415341e43-wolf-walker-5-8-person-camping-tent.jpg"
+          alt="Green Valley PG" class="img" />
+        <div class="details">
+          <h1 class="title">Highland Camp</h1>
+          <p class="desc">Sleeps 2 — Mountain View Tent</p>
+          <p class="location">📍 Darjeeling, West Bengal</p>
+          <p class="breakfast">🍽️ Breakfast & Dinner Included</p>
+          <div class="extra-info">
+            <p class="advance">₹1500 advance</p>
+            <p class="pay-later">💳 Pay at property</p>
           </div>
-          <div class="pg-rating">
-            <span id="rating">4.8</span>
-            <span class="rating-text">Top Rated</span>
+          <div class="rating">
+            <span id="rating">4.7</span>
+            <span class="rating-text">Excellent</span>
           </div>
           <div id="price">
-            <ins><del>₹9500</del></ins>
-            <span class="price-current">₹6999</span>
+            <ins><del>₹9200</del></ins>
+            <span class="price-current">₹6600</span>
           </div>
-          <a href="./room-booking.html" class="book-now-btn">Book Now</a>
         </div>
       </div>
     </section>
-
- 
   </main>
 
   <footer>
-            <div class="foot">
-                <h3>TRENDING HOTEL CITIES</h3>
-                <ul>
-                    <li>Hotels in Goa</li>
-                    <li>Hotels in Delhi</li>
-                    <li>Hotels in Mumbai</li>
-                    <li>Hotels in Banglore</li>
-                    <li>Hotels in Hyderabad</li>
-                    <li>Hotels in Pune</li>
-                    <li>Hotels in Agra</li>
-                    <li>Hotels in Jaipur</li>
-                    <li>Hotels in Ahmedabad</li>
-                    <li>Hotels in Mysore</li>
-                    <li>Hotels in Munnar</li>
-                    <li>Hotels in Chennai</li>
-                    <li>Hotels in Madurai</li>
-                    <li>Hotels in Kolkata</li>
-                    <li>Hotels in Ooty</li>
-                    <li>Hotels in Mahabaleshwar</li>
-                    <li>Hotels in Shimla</li>
-                    <li>Hotels in Manali</li>
-                    <li>Hotels in Nainital</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Top States</h3>
-                <ul>
-                    <li>Andhra Pradesh</li>
-                    <li>Arunachal Prades</li>
-                    <li>Assam</li>
-                    <li>Bihar</li>
-                    <li>Chhattisgarh</li>
-                    <li>Goa</li>
-                    <li>gujarat</li>
-                    <li>Haryana</li>
-                    <li>Himachal Pradesh</li>
-                    <li>Maharastra</li>
-                    <li>Manipur</li>
-                    <li>Meghalaya</li>
-                    <li>Mizoram</li>
-                    <li>Nagaland</li>
-                    <li>Odisha</li>
-                    <li>Punjab</li>
-                    <li>rajasthan</li>
-                    <li>sikkim</li>
-                    <li>Tamil Nadu</li>
-                    <li>Telangana</li>
-                    <li>Tripura</li>
-                    <li>Uttar Prades</li>
-                    <li>Uttarakhand</li>
-                    <li>west Bengal</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>support & FAQs</h3>
-                <ul>
-                    <li>Your bookings</li>
-                    <li>FAQs</li>
-                    <li>Contact us</li>
-                    <li>review a property</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>For suppliers, affiliates and the media</h3>
-                <ul>
-                    <li>Affilate with us</li>
-                    <li>New rooms</li>
-                    <li>Expedia Partner SOlution</li>
-                    <li>Promote with us</li>
-                    <li>Travel Agent</li>
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Policies</h3>
-                <ul>
-                    <li>Trems & Conditions</li>
-                    <li>Privacy</li>
-                    <li>Cookies</li>
-                    <li>Contact guidelines </li>
-                    
-                </ul>
-            </div>
-            <div class="foot">
-                <h3>Other information</h3>
-                <ul>
-                    <li>About us</li>
-                    <li>Carrers</li>
-                    <li>Travel Guides</li>
-                </ul>
-            </div>
-</footer>
+    <div class="foot">
+      <h3>TRENDING HOTEL CITIES</h3>
+      <ul>
+        <li>Hotels in Goa</li>
+        <li>Hotels in Delhi</li>
+        <li>Hotels in Mumbai</li>
+        <li>Hotels in Banglore</li>
+        <li>Hotels in Hyderabad</li>
+        <li>Hotels in Pune</li>
+        <li>Hotels in Agra</li>
+        <li>Hotels in Jaipur</li>
+        <li>Hotels in Ahmedabad</li>
+        <li>Hotels in Mysore</li>
+        <li>Hotels in Munnar</li>
+        <li>Hotels in Chennai</li>
+        <li>Hotels in Madurai</li>
+        <li>Hotels in Kolkata</li>
+        <li>Hotels in Ooty</li>
+        <li>Hotels in Mahabaleshwar</li>
+        <li>Hotels in Shimla</li>
+        <li>Hotels in Manali</li>
+        <li>Hotels in Nainital</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Top States</h3>
+      <ul>
+        <li>Andhra Pradesh</li>
+        <li>Arunachal Prades</li>
+        <li>Assam</li>
+        <li>Bihar</li>
+        <li>Chhattisgarh</li>
+        <li>Goa</li>
+        <li>gujarat</li>
+        <li>Haryana</li>
+        <li>Himachal Pradesh</li>
+        <li>Maharastra</li>
+        <li>Manipur</li>
+        <li>Meghalaya</li>
+        <li>Mizoram</li>
+        <li>Nagaland</li>
+        <li>Odisha</li>
+        <li>Punjab</li>
+        <li>rajasthan</li>
+        <li>sikkim</li>
+        <li>Tamil Nadu</li>
+        <li>Telangana</li>
+        <li>Tripura</li>
+        <li>Uttar Prades</li>
+        <li>Uttarakhand</li>
+        <li>west Bengal</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>support & FAQs</h3>
+      <ul>
+        <li>Your bookings</li>
+        <li>FAQs</li>
+        <li>Contact us</li>
+        <li>review a property</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>For suppliers, affiliates and the media</h3>
+      <ul>
+        <li>Affilate with us</li>
+        <li>New rooms</li>
+        <li>Expedia Partner SOlution</li>
+        <li>Promote with us</li>
+        <li>Travel Agent</li>
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Policies</h3>
+      <ul>
+        <li>Trems & Conditions</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+        <li>Contact guidelines </li>
+
+      </ul>
+    </div>
+    <div class="foot">
+      <h3>Other information</h3>
+      <ul>
+        <li>About us</li>
+        <li>Carrers</li>
+        <li>Travel Guides</li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>
