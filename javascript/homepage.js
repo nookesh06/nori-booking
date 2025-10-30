@@ -1,12 +1,12 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-    document.getElementById("sidebar").classList.toggle("active");
-}
-if(window.innerWidth < 768){
-    document.getElementById("sidebar").classList.remove("active");
-}
- 
 
+function myFunction(x) {
+  x.classList.toggle("change");
+  document.getElementById("sidebar").classList.toggle("active");
+}
+
+if (window.innerWidth < 768) {
+  document.getElementById("sidebar").classList.remove("active");
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const roomInput = document.getElementById("room");
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const doneButton = document.getElementById("done-button");
   const summaryDisplay = document.getElementById("summary-display");
 
+  // Start with 1 room by default
   let roomCount = 1;
 
   // Toggle visibility of room options
@@ -36,6 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
         countSpan.textContent = count;
       });
     });
+  }
+
+  // Function to update room titles after any removal
+  function updateRoomTitles() {
+    const rooms = document.querySelectorAll(".room-option");
+    rooms.forEach((room, index) => {
+      const title = room.querySelector(".room-title");
+      title.textContent = `Room ${index + 1}`;
+    });
+    roomCount = rooms.length; // Update room count to actual visible count
   }
 
   // Create new room dynamically
@@ -69,10 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
     roomOptions.insertBefore(newRoom, addRoomButton);
     setCounterListeners(newRoom);
 
+    // Handle remove button
     const removeBtn = newRoom.querySelector(".remove-room");
-    removeBtn.addEventListener("click", () => {
-      newRoom.remove();
-    });
+    removeBtn.addEventListener("click", (event) => {
+  event.stopPropagation(); // Prevent closing the room box
+  newRoom.remove();
+  updateRoomTitles(); // Recalculate numbering and count
+});
+
   }
 
   addRoomButton.addEventListener("click", createRoom);
@@ -103,9 +118,13 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   });
 
-  // Hide when clicking outside
+  // Hide options when clicking outside (only if visible)
   document.addEventListener("click", (e) => {
-    if (!roomOptions.contains(e.target) && e.target !== roomInput) {
+    if (
+      roomOptions.style.display === "block" &&
+      !roomOptions.contains(e.target) &&
+      e.target !== roomInput
+    ) {
       roomOptions.style.display = "none";
     }
   });
