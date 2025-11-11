@@ -18,54 +18,27 @@
         <div class="logo">
             <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
             <a href="index.html" id="logo-name">NORI.com</a>
-        </div>
-        <a href="../index.html" class="header-right-content">Home</a>
-        <a href="#" class="header-right-content" id="support">Support</a>
-        <a href="#" class="header-right-content">Trips</a>
-
-        <div id="profile">
-            <div id="div-icon">
-                <i class='fa fa-user-circle' id="icon"></i>
-            </div>
-            <a href="Login_Page.html" name="profile" class="header-right-content">Login</a>
-            <a href="signup_page.html" class="header-right-content">Sign Up</a>
-        </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        </div>  
     </header>
 
-    <nav class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="pg-page.html">PG</a>
-        <a href="resort-page.html">Resort</a>
-        <a href="lodge-page.html">Lodge</a>
-        <a href="camp-house-page.html">Camp House</a>
-        <a href="pent-house-page.html">Pent House</a>
-        <a href="private-capsule.html">Private Capsule</a>
-        <a href="villa-page.html">Villa</a>
-        <a href="Login_Page.html">Login</a>
-        <a href="signup_page.html">Sign Up</a>
-    </nav>
+   
 
     <main class="room-booking-container">
         <!-- Room Details Section -->
         <section class="room-details-section">
             <div class="room-images">
                 <div class="main-image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubPEj2AKKuTevrM5s7x7kVgOvJkeaKOufyw&s"
+                    <img src="https://images.adsttc.com/media/images/5f34/61d3/b357/65bf/b500/0099/newsletter/Peter_Aaron_(OTTO).jpg?1597268425"
                         alt="Skyline Penthouse, Mumbai" id="main-room-image" />
                 </div>
                 <div class="thumbnail-images">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubPEj2AKKuTevrM5s7x7kVgOvJkeaKOufyw&s"
+                    <img src="https://images.adsttc.com/media/images/5f34/61d3/b357/65bf/b500/0099/newsletter/Peter_Aaron_(OTTO).jpg?1597268425"
                         alt="Penthouse Thumbnail 1" class="thumbnail active" />
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/3e/9d/2b/penthouse-luxury-suite.jpg"
+                    <img src="https://images.adsttc.com/media/images/5026/09ed/28ba/0d73/7100/0012/slideshow/stringio.jpg?1414076367"
                         alt="Penthouse Thumbnail 2" class="thumbnail" />
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/244829419.jpg?k=b8a8e2a8747c3e4e18284a746c507ccedb733fca623dd52e2af37e8484b9ce40&o=&hp=1"
+                    <img src="https://images.adsttc.com/media/images/5026/09f6/28ba/0d73/7100/0013/slideshow/stringio.jpg?1414076369"
                         alt="Penthouse Thumbnail 3" class="thumbnail" />
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/b1/53/03/luxury-penthouse-suite.jpg?w=700&h=-1&s=1"
+                    <img src="https://images.adsttc.com/media/images/5026/09fe/28ba/0d73/7100/0014/slideshow/stringio.jpg?1414076371"
                         alt="Penthouse Thumbnail 4" class="thumbnail" />
                 </div>
             </div>
@@ -120,6 +93,8 @@
                 <h2>Book Your Stay</h2>
 
                 <!-- Date Selection -->
+                                 <form action="" id="booking-form">
+
                 <div class="date-selection">
                     <div class="date-input">
                         <label for="checkin-date">Check-in Date</label>
@@ -156,16 +131,38 @@
                             <input type="tel" id="phone" required />
                         </div>
                     </div>
+<div id="rooms_datalist" class="input-boxes">
+                            <input type="text" id="room" readonly />
+                            <label for="room" id="rooms-guest">Rooms & Guests *</label>
 
-                    <div class="form-group">
-                        <label for="family-members">Number of Guests</label>
-                        <select id="family-members">
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                        </select>
-                    </div>
+                            <div id="room-options" class="room-options" style="display: none;">
+                                <!-- Default Room -->
+                                <div class="room-option">
+                                    <span class="room-title">Room 1</span>
+                                    <div class="guest-count">
+                                        <div class="guest-group">
+                                            <span class="label">Adults:</span>
+                                            <div class="buttons">
+                                                <button class="count-button decrease"type="button">-</button>
+                                                <span class="count adult-count">0</span>
+                                                <button class="count-button increase"type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="guest-group">
+                                            <span class="label">Children:</span>
+                                            <div class="buttons">
+                                                <button class="count-button decrease">-</button>
+                                                <span class="count child-count">0</span>
+                                                <button class="count-button increase">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button id="add-room" type="button">Add Room</button>
+                                <button id="done-button" type="button" class="done-button">Done</button>
+                            </div>
+                        </div>
 
                     <div class="form-group">
                         <label for="special-requests">Special Requests (Optional)</label>
@@ -204,41 +201,16 @@
                     <button type="button" class="btn btn-secondary" id="cancel-booking">
                         Cancel
                     </button>
-                    <a href="./booking-successful.html" class="booking-successful">
-                        <button type="button" class="btn btn-primary" id="confirm-booking">
+                        <button type="submit" class="btn btn-primary" id="confirm-booking">
                             Confirm Booking
                         </button>
-                    </a>
                 </div>
+                                </form>
+
             </div>
         </section>
     </main>
 
-    <!-- Booking Confirmation Modal -->
-    <div class="modal" id="booking-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <i class="fa fa-check-circle success-icon"></i>
-                <h2>Booking Confirmed!</h2>
-            </div>
-            <div class="modal-body">
-                <p>Your stay at Skyline Penthouse, Mumbai has been successfully booked. A confirmation email has been sent to your registered address.</p>
-                <div class="booking-details">
-                    <h4>Booking Details:</h4>
-                    <p><strong>Booking ID:</strong> <span id="booking-id"></span></p>
-                    <p><strong>Property:</strong> Skyline Penthouse, Mumbai</p>
-                    <p><strong>Check-in:</strong> <span id="modal-checkin"></span></p>
-                    <p><strong>Check-out:</strong> <span id="modal-checkout"></span></p>
-                    <p><strong>Total Amount:</strong> <span id="modal-total">₹17,999</span></p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" id="view-bookings">View My Bookings</button>
-                <button class="btn btn-secondary" id="close-modal">Close</button>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="foot">

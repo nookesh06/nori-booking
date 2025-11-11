@@ -1,7 +1,7 @@
-
+/* Global Reset */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -9,7 +9,6 @@
 body {
   background-color: #f5f7fa;
   color: #333;
-  
 }
 
 /* Header */
@@ -91,25 +90,7 @@ header a:hover {
   padding-top: 70px;
 }
 
-
-
-
-
-
-#left-adds-aside,
-#right-adds-container {
-  width: 20%;
-  height: auto;
-  padding: 1rem;
-  color: white;
-}
-
-#left-adds-aside {
-  background-color: black;
-}
-
-
-
+/* Left Sidebar (Filters) */
 #left-adds-aside {
   width: 300px;
   background-color: #fff;
@@ -118,6 +99,13 @@ header a:hover {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   color: #333;
   height: 100%;
+}
+
+#right-adds-container {
+  width: 20%;
+  height: auto;
+  padding: 1rem;
+  color: white;
 }
 
 #left-adds-aside h1 {
@@ -160,7 +148,7 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-
+/* PG Section */
 section {
   width: 60%;
   padding: 2%;
@@ -272,6 +260,7 @@ section {
   color: #e63946;
 }
 
+/* Footer */
 footer {
   background-color: #141414;
   color: #ddd;
@@ -279,7 +268,6 @@ footer {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  
 }
 
 .foot {
@@ -329,18 +317,20 @@ footer {
     align-items: flex-start;
     padding: 10px;
     position: sticky;
-    top: 0%;
+    top: 0;
   }
 
   #search-div {
     width: 100%;
     margin-top: 10px;
   }
-  #profile{
+
+  #profile {
     position: absolute;
     top: 10%;
     right: 5%;
   }
+
   .img-container-div {
     flex-direction: column;
     height: auto;
@@ -358,11 +348,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  #profile{
+  #profile {
     position: absolute;
     top: 15%;
     right: 5%;
   }
+
   .pg-title {
     font-size: 1.2rem;
   }
@@ -383,51 +374,46 @@ footer {
   }
 }
 
-/* Back Button Styling */
+/* Back Button */
 .back-button {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #333;
-    transition: all 0.3s ease;
-    z-index: 100;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .back-button:hover {
-    background: #00bfff;
-    color: white;
-    border-color: #00bfff;
-    transform: translateY(-50%) scale(1.1);
+  background: #00bfff;
+  color: white;
+  border-color: #00bfff;
+  transform: translateY(-50%) scale(1.1);
 }
 
 .back-button i {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-/* Ensure header has relative positioning for absolute back button */
-header {
-    position: relative;
-}
+/* Responsive Back Button */
+@media (max-width: 768px) {
+  .back-button {
+    left: 15px;
+    width: 35px;
+    height: 35px;
+  }
 
-/* Responsive back button */
-@media screen and (max-width: 768px) {
-    .back-button {
-        left: 15px;
-        width: 35px;
-        height: 35px;
-    }
-    
-    .back-button i {
-        font-size: 14px;
-    }
+  .back-button i {
+    font-size: 14px;
+  }
 }

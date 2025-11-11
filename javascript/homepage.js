@@ -1,12 +1,5 @@
 
-function myFunction(x) {
-  x.classList.toggle("change");
-  document.getElementById("sidebar").classList.toggle("active");
-}
 
-if (window.innerWidth < 768) {
-  document.getElementById("sidebar").classList.remove("active");
-}
 
 document.addEventListener("DOMContentLoaded", () => {
   const roomInput = document.getElementById("room");

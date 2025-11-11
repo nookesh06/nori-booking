@@ -12,40 +12,32 @@
 
 <body>
     <header>
+  <div class="logo">
+    <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
+    <a href="#" id="logo-name">NORI.com</a>
+  </div>
 
-        <div class="logo">
-            <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
-            <a href="#" id="logo-name">NORI.com</a>
-        </div>
-        <a href="#" class="header-right-content">Property</a>
-        <a href="#" class="header-right-content" id="support">Support</a>
-        <a href="#" class="header-right-content">Trips</a>
+  <!-- Hamburger Icon -->
+  <div class="menu-icon" id="menu-icon">
+    <i class="fa fa-bars"></i>
+  </div>
 
-        <div id="profile">
-            <div id=div-icon>
-                <i class='fa fa-user-circle' id="icon"></i>
-            </div>
-            <a href="html/Login_Page.html" name="profile" class="header-right-content">Login</a>
-            <a href="html/signup_page.html" class="header-right-content">Sign Up</a>
-        </div>
-        <div class="menu-toggle" id="menu-toggle" onclick="myFunction(this)">
-            <div class="toggle" id="toggle1"></div>
-            <div class="toggle" id="toggle2"></div>
-            <div class="toggle" id="toggle3"></div>
-        </div>
-    </header>
-    <nav class="sidebar" id="sidebar">
-        <a href="./index.html">Home</a>
-        <a href="./html/pg-page.html">PG</a>
-        <a href="./html/resort-page.html">Resort</a>
-        <a href="./html/lodge-page.html">Lodge</a>
-        <a href="./html/camp-house-page.html">Camp House</a>
-        <a href="./html/pent-house-page.html">Pent House</a>
-        <a href="./html/private-capsule.html">Private Capsule</a>
-        <a href="./html/villa-page.html">Villa</a>
-        <a href="./html/Login_Page.html">Login</a>
-        <a href="./html/signup_page.html">Sign Up</a>
-    </nav>
+  <!-- Navigation -->
+  <nav id="nav-links">
+    <a href="#" class="header-right-content">Property</a>
+    <a href="#" class="header-right-content" id="support">Support</a>
+    <a href="#" class="header-right-content">Trips</a>
+    <div id="profile">
+      <div id="div-icon">
+        <i class="fa fa-user-circle" id="icon"></i>
+      </div>
+      <a href="html/Login_Page.html" class="header-right-content">Login</a>
+      <a href="html/signup_page.html" class="header-right-content">Sign Up</a>
+    </div>
+  </nav>
+</header>
+
+
     <section>
         <img src="https://i.pinimg.com/1200x/dc/4f/35/dc4f350c640eb5287b6b4eef7588db95.jpg" id="main_image" alt="">
         <div class="inputs">
@@ -100,9 +92,9 @@
                 <button type="submit" id="search-button">Search</button>
             </div>
         </div>
-        </div>
+      
         <div id="fav-img-h1-img-h3">
-            <h1>choose your room type</h1>
+            <h1 id = "room-type-h1">choose your room type</h1>
             <div id="fav-img">
                 <div class="card">
                     <a href="./html/pg-page.html">
@@ -150,229 +142,228 @@
             </div>
 
             <div id="top-items-h1-images">
-                <h1>Top deals for a last minute getaway</h1>
+                <h1 id="top-deals-h1">Top deals for a last minute getaway</h1>
                 <div id="top-items-img">
 
                     <!-- 1. Luxe Stay PG -->
-                        <div class="top-items-card">
-                        <a href="html/room-booking.html" class = "top-items-details">
-                        <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG">
-                        <div class="top-items-card-information">
-                            
-                            <h4 class="name">Luxe Stay PG, Hyderabad</h4>
-                            <div class = "rating-div">
-                                <input type="text" value="9.4" class="rating" readonly>
-                                <span>Excellent (42 reviews)</span>
+                    <div class="top-items-card">
+                        <a href="html/room-booking.html" class="top-items-details">
+                            <img src="https://alexandro.in/image/hyderabad/settl-amalfi/1.jpg" alt="Luxe Stay PG">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">Luxe Stay PG, Hyderabad</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="9.4" class="rating" readonly>
+                                    <span id = "rating-review">Excellent (42 reviews)</span>
+                                </div>
+                                <span class="price">₹6,200</span>
+                                <span><del>₹8,500</del></span><br>
+                                <span class="total-price">₹6,200 total</span><br>
+                                <span class="total-price">Includes breakfast</span><br>
+                                <input type="text" value="25% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹6,200</span>
-                            <span ><del>₹8,500</del></span><br>
-                            <span class="total-price">₹6,200 total</span><br>
-                            <span class="total-price">Includes breakfast</span><br>
-                            <input type="text" value="25% off" class="offer" readonly>
-                        </div>
                         </a>
                     </div>
-                    
+
 
                     <!-- 2. ITC Grand Resort -->
-                      <div class="top-items-card">
-                                          <a href="html/resort-booking.html" class = "top-items-details">
+                    <div class="top-items-card">
+                        <a href="html/resort-booking.html" class="top-items-details">
 
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipOSxxxXSUCYpT86_wSaDJ6uzl7t6WXoT5clEu9y=s680-w680-h510-rw"
-                            alt="ITC Grand Resort">
-                        <div class="top-items-card-information">
-                            
-                            <h4 class="name">ITC Grand Resort, Goa</h4>
-                            <div class="rating-div">
-                                <input type="text" value="9.8" class="rating" readonly>
-                                <span>Top Rated (110 reviews)</span>
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipOSxxxXSUCYpT86_wSaDJ6uzl7t6WXoT5clEu9y=s680-w680-h510-rw"
+                                alt="ITC Grand Resort">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">ITC Grand Resort, Goa</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="9.8" class="rating" readonly>
+                                    <span>Top Rated (110 reviews)</span>
+                                </div>
+                                <span class="price">₹25,899</span>
+                                <span><del>₹28,000</del></span><br>
+                                <span class="total-price">₹25,899 total</span><br>
+                                <span class="total-price">Lunch & Dinner Included</span><br>
+                                <input type="text" value="10% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹25,899</span>
-                            <span><del>₹28,000</del></span><br>
-                            <span class="total-price">₹25,899 total</span><br>
-                            <span class="total-price">Lunch & Dinner Included</span><br>
-                            <input type="text" value="10% off" class="offer" readonly>
-                        </div>
                         </a>
                     </div>
-                    
+
 
                     <!-- 3. Stone Lodge Private Residency -->
                     <div class="top-items-card">
-                        <a href="html/lodge-booking.html" class = "top-items-details">
+                        <a href="html/lodge-booking.html" class="top-items-details">
                             <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/259555277.jpg?k=ddf0a47d9ab04f23bf4d2bf8bf96cc8c98340ac8ebb44e4152cc8180cf794079&o="
-                            alt="Stone Lodge Private Residency">
-                        <div class="top-items-card-information">
-                           
-                            <h4 class="name">Stone Lodge Residency</h4>
-                             <div class="rating-div">
-                                <input type="text" value="10" class="rating" readonly>
-                                <span>Exceptional (55 reviews)</span>
+                                alt="Stone Lodge Private Residency">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">Stone Lodge Residency</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="10" class="rating" readonly>
+                                    <span>Exceptional (55 reviews)</span>
+                                </div>
+                                <span class="price">₹1,200</span>
+                                <span><del>₹2,000</del></span><br>
+                                <span class="total-price">₹1,200 total</span><br>
+                                <span class="total-price">Lunch & Dinner Included</span><br>
+                                <input type="text" value="40% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹1,200</span>
-                            <span><del>₹2,000</del></span><br>
-                            <span class="total-price">₹1,200 total</span><br>
-                            <span class="total-price">Lunch & Dinner Included</span><br>
-                            <input type="text" value="40% off" class="offer" readonly>
-                        </div>
                         </a>
                     </div>
 
                     <!-- 4. Mountain Mist Camp -->
                     <div class="top-items-card">
-                        <a href="html/camp-house-booking.html" class = "top-items-details">
+                        <a href="html/camp-house-booking.html" class="top-items-details">
                             <img src="https://m.media-amazon.com/images/I/81pSTzxLxlL._AC_UF894,1000_QL80_.jpg"
-                            alt="Mountain Mist Camp">
-                        <div class="top-items-card-information">
-                            
-                            <h4 class="name">Mountain Mist Camp, Munnar</h4>
-                            <div class="rating-div">
-                                <input type="text" value="8.8" class="rating" readonly>
-                                <span>Very Good (32 reviews)</span>
+                                alt="Mountain Mist Camp">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">Mountain Mist Camp, Munnar</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="8.8" class="rating" readonly>
+                                    <span>Very Good (32 reviews)</span>
+                                </div>
+                                <span class="price">₹5,600</span>
+                                <span><del>₹8,000</del></span><br>
+                                <span class="total-price">₹5,600 total</span><br>
+                                <span class="total-price">Breakfast & Dinner Included</span><br>
+                                <input type="text" value="30% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹5,600</span>
-                            <span><del>₹8,000</del></span><br>
-                            <span class="total-price">₹5,600 total</span><br>
-                            <span class="total-price">Breakfast & Dinner Included</span><br>
-                            <input type="text" value="30% off" class="offer" readonly>
-                        </div>
                         </a>
                     </div>
 
                     <!-- 5. Skyline Penthouse -->
                     <div class="top-items-card">
-                       <a href="html/pent-house-booking.html" class = "top-items-details">
-                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubPEj2AKKuTevrM5s7x7kVgOvJkeaKOufyw&s"
-                            alt="Skyline Penthouse">
-                        <div class="top-items-card-information">
-                            
-                            <h4 class="name">Skyline Penthouse, Mumbai</h4>
-                            <div class="rating-div">
-                                <input type="text" value="9.9" class="rating" readonly>
-                                <span>Top Rated (18 reviews)</span>
+                        <a href="html/pent-house-booking.html" class="top-items-details">
+                            <img src="https://images.adsttc.com/media/images/5f34/61d3/b357/65bf/b500/0099/newsletter/Peter_Aaron_(OTTO).jpg?1597268425"
+                                alt="Skyline Penthouse">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">Skyline Penthouse, Mumbai</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="9.9" class="rating" readonly>
+                                    <span>Top Rated (18 reviews)</span>
+                                </div>
+                                <span class="price">₹17,999</span>
+                                <span><del>₹25,000</del></span><br>
+                                <span class="total-price">₹17,999 total</span><br>
+                                <span class="total-price">Luxury Suite with Breakfast</span><br>
+                                <input type="text" value="28% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹17,999</span>
-                            <span><del>₹25,000</del></span><br>
-                            <span class="total-price">₹17,999 total</span><br>
-                            <span class="total-price">Luxury Suite with Breakfast</span><br>
-                            <input type="text" value="28% off" class="offer" readonly>
-                        </div>
-                       </a>
+                        </a>
                     </div>
 
                     <!-- 6. MetroPod Smart Stay -->
                     <div class="top-items-card">
-                       <a href="html/private-capsule-booking.html" class = "top-items-details">
-                         <img src="https://i.pinimg.com/736x/bf/75/0e/bf750ec4eda58b53ccd419cd7203fca6.jpg"
-                            alt="MetroPod Smart Stay">
-                        <div class="top-items-card-information">
-                            
-                            <h4 class="name">MetroPod Smart Stay, Kochi</h4>
-                            <div class="rating-div">
-                                <input type="text" value="8.9" class="rating" readonly>
-                                <span>Excellent (21 reviews)</span>
+                        <a href="html/private-capsule-booking.html" class="top-items-details">
+                            <img src="https://i.pinimg.com/736x/bf/75/0e/bf750ec4eda58b53ccd419cd7203fca6.jpg"
+                                alt="MetroPod Smart Stay">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">MetroPod Smart Stay, Kochi</h4>
+                                <div class="rating-div">
+                                    <input type="text" value="8.9" class="rating" readonly>
+                                    <span>Excellent (21 reviews)</span>
+                                </div>
+                                <span class="price">₹2,899</span>
+                                <span><del>₹4,200</del></span><br>
+                                <span class="total-price">₹2,899 total</span><br>
+                                <span class="total-price">Lunch & Wi-Fi Included</span><br>
+                                <input type="text" value="31% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹2,899</span>
-                            <span><del>₹4,200</del></span><br>
-                            <span class="total-price">₹2,899 total</span><br>
-                            <span class="total-price">Lunch & Wi-Fi Included</span><br>
-                            <input type="text" value="31% off" class="offer" readonly>
-                        </div>
-                       </a>
+                        </a>
                     </div>
 
                     <!-- 7. Luxury Beach Villa -->
                     <div class="top-items-card">
-                       <a href="html/villa-booking.html" class = "top-items-details">
-                          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
-                            alt="Luxury Beach Villa">
-                        <div class="top-items-card-information">
-                           
-                            <h4 class="name">Luxury Beach Villa, Calangute</h4>
-                             <div class="rating-div">
-                                <input type="text" value="9.8" class="rating" readonly>
-                                <span>Wonderful (60 reviews)</span>
+                        <a href="html/villa-booking.html" class="top-items-details">
+                            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80"
+                                alt="Luxury Beach Villa">
+                            <div class="top-items-card-information">
+
+                                <h4 class="name">Luxury Beach Villa, Calangute</h4>
+
+                                <div class="rating-div">
+                                    <input type="text" value="9.8" class="rating" readonly>
+                                    <span>Wonderful (60 reviews)</span>
+                                </div>
+                                <span class="price">₹32,000</span>
+                                <span><del>₹45,000</del></span><br>
+                                <span class="total-price">₹32,000 / day</span><br>
+                                <span class="total-price">Private Pool & Kitchen</span><br>
+                                <input type="text" value="29% off" class="offer" readonly>
                             </div>
-                            <span class="price">₹32,000</span>
-                            <span><del>₹45,000</del></span><br>
-                            <span class="total-price">₹32,000 / day</span><br>
-                            <span class="total-price">Private Pool & Kitchen</span><br>
-                            <input type="text" value="29% off" class="offer" readonly>
-                        </div>
+                        </a>
                     </div>
-
                 </div>
-
-            </div>
-            <div id="explore-card-h1-container-img">
-                <h1>Explore stays in popular destinations</h1>
-                <div id="explore-card-container">
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/736x/7c/31/c1/7c31c15c4a1fbb0ae70deef86ab03514.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Vizag</h2>
-                            <h3>Andhra Pradesh</h3>
+                <div id="explore-card-h1-container-img">
+                    <h1 id = "explore-stays-h1">Explore stays in popular destinations</h1>
+                    <div id="explore-card-container">
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/7c/31/c1/7c31c15c4a1fbb0ae70deef86ab03514.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Vizag</h2>
+                                <h3>Andhra Pradesh</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/736x/22/cb/8a/22cb8a69e3541f1e8b4206f33e3fde97.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Jaipur</h2>
-                            <h3>Rajasthan</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/22/cb/8a/22cb8a69e3541f1e8b4206f33e3fde97.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Jaipur</h2>
+                                <h3>Rajasthan</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/1200x/11/17/0b/11170b186c0eaa633d1d4379f0063b8b.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Bangore</h2>
-                            <h3>Karnataka</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/1200x/11/17/0b/11170b186c0eaa633d1d4379f0063b8b.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Bangore</h2>
+                                <h3>Karnataka</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/736x/45/58/cb/4558cb4369bc059e6733be5da6441356.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Tirupati</h2>
-                            <h3>Andhra Pradesh</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/45/58/cb/4558cb4369bc059e6733be5da6441356.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Tirupati</h2>
+                                <h3>Andhra Pradesh</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/736x/46/92/44/469244888ffe9d72c9aad236624abcce.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Sree Padmanabhaswamy</h2>
-                            <h3>Kerala</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/46/92/44/469244888ffe9d72c9aad236624abcce.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Sree Padmanabhaswamy</h2>
+                                <h3>Kerala</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/1200x/04/a2/58/04a2587edefba986b7beb02c3016d7b2.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Baga</h2>
-                            <h3>Goa</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/1200x/04/a2/58/04a2587edefba986b7beb02c3016d7b2.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Baga</h2>
+                                <h3>Goa</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/736x/9a/89/90/9a8990354947d0580ac088447c3ef2df.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Lucknow</h2>
-                            <h3>Uttar Pradesh</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/736x/9a/89/90/9a8990354947d0580ac088447c3ef2df.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Lucknow</h2>
+                                <h3>Uttar Pradesh</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="expore-card">
-                        <img src="https://i.pinimg.com/1200x/a6/36/47/a636475d67c3c1eaa57ae785981b9582.jpg"
-                            class="explore-card-img">
-                        <div class="information">
-                            <h2>Hyderabad</h2>
-                            <h3>Telangana</h3>
+                        <div class="expore-card">
+                            <img src="https://i.pinimg.com/1200x/a6/36/47/a636475d67c3c1eaa57ae785981b9582.jpg"
+                                class="explore-card-img">
+                            <div class="information">
+                                <h2>Hyderabad</h2>
+                                <h3>Telangana</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
     </section>
     <footer>
         <div class="foot">
@@ -466,6 +457,22 @@
             </ul>
         </div>
     </footer>
+<script>
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+let menuOpen = false;
+
+menuIcon.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  if (menuOpen) {
+    navLinks.classList.add('active');
+    menuIcon.innerHTML = '<i class="fa fa-times"></i>'; // cross mark
+  } else {
+    navLinks.classList.remove('active');
+    menuIcon.innerHTML = '<i class="fa fa-bars"></i>'; // 3 lines
+  }
+});
+</script>
 
 </body>
 

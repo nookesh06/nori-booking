@@ -19,36 +19,10 @@
             <img src="https://i.pinimg.com/736x/37/9d/5b/379d5bc2955f0893cea83059cedb6e39.jpg" alt="Logo" id="logo">
             <a href="index.html" id="logo-name">NORI.com</a>
         </div>
-        <a href="../index.html" class="header-right-content">Home</a>
-        <a href="#" class="header-right-content" id="support">Support</a>
-        <a href="#" class="header-right-content">Trips</a>
-
-        <div id="profile">
-            <div id="div-icon">
-                <i class='fa fa-user-circle' id="icon"></i>
-            </div>
-            <a href="Login_Page.html" name="profile" class="header-right-content">Login</a>
-            <a href="signup_page.html" class="header-right-content">Sign Up</a>
-        </div>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    
     </header>
 
-    <nav class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="pg-page.html">PG</a>
-        <a href="resort-page.html">Resort</a>
-        <a href="lodge-page.html">Lodge</a>
-        <a href="camp-house-page.html">Camp House</a>
-        <a href="pent-house-page.html">Pent House</a>
-        <a href="private-capsule.html">Private Capsule</a>
-        <a href="villa-page.html">Villa</a>
-        <a href="Login_Page.html">Login</a>
-        <a href="signup_page.html">Sign Up</a>
-    </nav>
+   
 
     <main class="room-booking-container">
         <!-- Room Details Section -->
@@ -120,6 +94,8 @@
                 <h2>Book Your Stay</h2>
 
                 <!-- Date Selection -->
+                                 <form action="" id="booking-form">
+
                 <div class="date-selection">
                     <div class="date-input">
                         <label for="checkin-date">Check-in Date</label>
@@ -157,15 +133,40 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="family-members">Number of Guests</label>
-                        <select id="family-members">
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                        </select>
-                    </div>
+                     <!-- Rooms & Guests Selection -->
+                        <div id="rooms_datalist" class="input-boxes">
+                            <input type="text" id="room" readonly />
+                            <label for="room" id="rooms-guest">Rooms & Guests *</label>
+
+                            <div id="room-options" class="room-options" style="display: none;">
+                                <!-- Default Room -->
+                                <div class="room-option">
+                                    <span class="room-title">Room 1</span>
+                                    <div class="guest-count">
+                                        <div class="guest-group">
+                                            <span class="label">Adults:</span>
+                                            <div class="buttons">
+                                                <button class="count-button decrease" type="button">-</button>
+                                                <span class="count adult-count">0</span>
+                                                <button class="count-button increase" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="guest-group">
+                                            <span class="label">Children:</span>
+                                            <div class="buttons">
+                                                <button class="count-button decrease">-</button>
+                                                <span class="count child-count">0</span>
+                                                <button class="count-button increase">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button id="add-room" type="button">Add Room</button>
+                                <button id="done-button" type="button" class="done-button">Done</button>
+                            </div>
+                        </div>
+
 
                     <div class="form-group">
                         <label for="special-requests">Special Requests (Optional)</label>
@@ -204,41 +205,16 @@
                     <button type="button" class="btn btn-secondary" id="cancel-booking">
                         Cancel
                     </button>
-                    <a href="./booking-successful.html" class="booking-successful">
-                        <button type="button" class="btn btn-primary" id="confirm-booking">
+                        <button type="submit" class="btn btn-primary" id="confirm-booking">
                             Confirm Booking
                         </button>
-                    </a>
+                    
                 </div>
+            </form>
             </div>
         </section>
     </main>
 
-    <!-- Booking Confirmation Modal -->
-    <div class="modal" id="booking-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <i class="fa fa-check-circle success-icon"></i>
-                <h2>Booking Confirmed!</h2>
-            </div>
-            <div class="modal-body">
-                <p>Your stay at Luxury Beach Villa, Calangute has been successfully booked. A confirmation email has been sent to your registered address.</p>
-                <div class="booking-details">
-                    <h4>Booking Details:</h4>
-                    <p><strong>Booking ID:</strong> <span id="booking-id"></span></p>
-                    <p><strong>Property:</strong> Luxury Beach Villa, Calangute</p>
-                    <p><strong>Check-in:</strong> <span id="modal-checkin"></span></p>
-                    <p><strong>Check-out:</strong> <span id="modal-checkout"></span></p>
-                    <p><strong>Total Amount:</strong> <span id="modal-total">₹32,000</span></p>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" id="view-bookings">View My Bookings</button>
-                <button class="btn btn-secondary" id="close-modal">Close</button>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="foot">

@@ -1,0 +1,128 @@
+/* cancel.css */
+
+/* Basic setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2ff, #f9fcff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.cancel-container {
+  text-align: center;
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation Circle */
+.circle {
+  width: 120px;
+  height: 120px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  border: 4px solid #dc3545;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pop 0.8s ease-out;
+}
+
+/* Tick inside circle */
+.tick {
+  font-size: 60px;
+  color: #dc3545;
+  transform: scale(0);
+  animation: tickAppear 0.6s ease-in-out 0.5s forwards;
+}
+
+/* Title and Text */
+.title {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/* Back button */
+.back-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #dc3545;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #b02a37;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  80% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes tickAppear {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cancel-container {
+    padding: 30px 20px;
+    width: 90%;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tick {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}

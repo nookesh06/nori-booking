@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cancel Booking — NORI</title>
+  <link rel="stylesheet" href="../css/cancel.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div class="brand">
+        <div class="logo">NORI</div>
+        <div class="tag">Hotel Booking</div>
+      </div>
+      <nav class="header-links">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">My Bookings</a>
+        <a href="#" class="link primary">Support</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h1 class="card-title">Cancel a Room Booking</h1>
+      <p class="card-sub">Enter your booking details below to cancel your reservation.</p>
+
+      <form id="cancelForm" class="form" autocomplete="off" novalidate>
+        <div class="field-row">
+          <label for="bookingId">Booking ID</label>
+          <input id="bookingId" name="bookingId" type="text" placeholder="e.g. NORI-123456" required />
+        </div>
+
+        <div class="field-row">
+          <label for="guestName">Guest Name</label>
+          <input id="guestName" name="guestName" type="text" placeholder="Full name on reservation" required />
+        </div>
+
+        <div class="field-row">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="field-row">
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" />
+        </div>
+
+        <div class="field-row">
+          <label for="reason">Reason for cancellation (optional)</label>
+          <textarea id="reason" name="reason" rows="3" placeholder="Tell us why..." ></textarea>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="previewBtn" class="btn ghost">Preview</button>
+          <button type="submit" class="btn danger">Cancel Booking</button>
+        </div>
+
+        <p class="small-note">
+          Cancelling may be subject to cancellation policy and fees — check your booking terms or contact support.
+        </p>
+      </form>
+    </section>
+
+    <footer class="page-footer">
+      <small>© <span id="year"></span> NORI — All rights reserved</small>
+    </footer>
+  </main>
+
+</body>
+</html>
