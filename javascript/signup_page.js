@@ -12,3 +12,11 @@ function password_show(event) {
         icon.classList.add("fa-eye-slash");
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("signupForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        window.location.href = "Login_Page.html";
+    });
+});
