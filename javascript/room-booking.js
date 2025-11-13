@@ -184,3 +184,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// Change main image when thumbnail is clicked
+document.addEventListener("DOMContentLoaded", function () {
+    const mainImage = document.getElementById("main-room-image");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function () {
+            // Change the main image source
+            mainImage.src = this.src;
+
+            // Remove 'active' class from all thumbnails
+            thumbnails.forEach(thumb => thumb.classList.remove("active"));
+
+            // Add 'active' class to the clicked thumbnail
+            this.classList.add("active");
+        });
+    });
+});
+
